@@ -1,3 +1,5 @@
 {
     "cSpell.language": "pt_BR",
+    "diffEditor.wordWrap": "on",
+    "editor.wordWrap": "on",
 }

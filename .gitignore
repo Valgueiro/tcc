@@ -7,5 +7,6 @@ main.lof
 main.lot
 main.toc
 main.xdv
-main.log
+*.log
 main.synctex.gz
+*.aux
