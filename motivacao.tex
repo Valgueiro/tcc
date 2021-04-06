@@ -1,6 +1,6 @@
 
 \chapter{Motivação}
-Neste cápitulo será abordada a motivação por trás da pesquisa apresentada neste trabalho. Na primeira seção, será falado um pouco sobre a grande adoção das práticas ágeis pela indústria. Já na segunda seção, será abordada a falta de estudos voltados para o contexto do Porto Digital recifense. A terceira discorre sobre o artigo base que serviu de motivação para este trabalho. Na última seção temos as perguntas de pesquisa definidas pelo autor.
+Neste cápitulo será abordada a motivação por trás da pesquisa produzida. Na primeira seção, será falado um pouco sobre a grande adoção das práticas ágeis pela indústria. Já na segunda seção, será abordada a falta de estudos voltados para o contexto do Porto Digital recifense. A terceira discorre sobre o artigo base que serviu de motivação para este trabalho. A última seção contém as perguntas de pesquisa que este trabalho tenta responder.
 
 \section{A grande adoção de CI e CD}
 As práticas de integração e \emph{deployment} contínuos (\emph{Continuous Integration} e \emph{Continuous Deployment}) já são muito difundidas e utilizadas por empresas de tecnologia em todo o mundo. Segundo \cite{stateAgileReport2020}, 95\% dos participantes reportaram que sua organização pratica metodologias ágeis e 55\% utilizam a técnica de integração continua. Também nesta mesma pesquisa foi encontrado que 36\% utilizam a técnica de \emph{deployment} contínuos. 
@@ -13,10 +13,10 @@ Especificamente sobre integração contínua, a prática hoje em dia já é bast
 
 Ainda há, no entanto, uma grande falta de estudos a respeito de como essas práticas se exportaram para as grandes empresas \cite{empiricalStudy2016}, inclusive em Recife, um dos grandes polos tecnológicos do Brasil. Somente no Porto Digital, localizado na capital pernambucana, há cerca de 330 empresas e 11 mil trabalhadores com faturamento anual de R\$ 2,3 bilhões somente em 2019 \cite{portoDigital}.
 
-[Há trabalhos nessa area em recife?]
+% TODO adicionar artigos sobre recife(?)
 
 \section{O artigo base}
-Nesse contexto, a leitura do artigo \cite{empiricalStudy2016} foi fundamental para motivar o autor deste trabalho a entender um pouco mais sobre o estado das práticas de CI/CD no contexto de Recife. No artigo de Schermman et al, os autores tentam entender como as práticas geralmente associadas a \emph{Continuous Deployment} acharam o seu caminho na indústria. Para tal, foi utilizado um método misto de estudo empírico baseado em um pré-estudo na literatura, entrevistas qualitativas com 20 participantes e uma entrevista quantitativa que recebeu 187 respostas. A ideia era questionar até que ponto a sabedoria na area estava dominada por peculiaridades de um pequeno grupo de grandes empresas, como Facebook e Google.
+Nesse contexto, a leitura do artigo \cite{empiricalStudy2016} foi fundamental para motivar o autor deste trabalho a entender um pouco mais sobre o estado das práticas de CI/CD no contexto de Recife. No artigo de Schermman et al, os autores buscam entender como as práticas geralmente associadas a \emph{Continuous Deployment} acharam o seu caminho na indústria. Para tal, foi utilizado um método misto de estudo empírico baseado em um pré-estudo na literatura, entrevistas qualitativas com 20 participantes e uma entrevista quantitativa que recebeu 187 respostas. A ideia era questionar até que ponto a sabedoria na area estava dominada por peculiaridades de um pequeno grupo de grandes empresas, como Facebook e Google.
 
 Apesar de focar as perguntas de pesquisa em \emph{Continuous Deployment}, os autores definem, após a etapa de pré-estudo, a \emph{stairway to heaven} (escada para o céu, em tradução livre). Esta  permeia práticas de integração contínua e entregas parciais e define um caminho de evolução das empresas para um estágio de entregas sofisticado. 
 
@@ -29,7 +29,7 @@ Apesar de focar as perguntas de pesquisa em \emph{Continuous Deployment}, os aut
 }\label{fig_exe}
 \end{figure}
 
-Com este caminho definido, os autores do artigo montaram as entrevistas qualitativas e quantitativas baseadas nas práticas que surgiram em cada degrau da evolução. O interessante da abordagem dos autores foi o roteiro consistir de perguntas sobre o processo utilizado, sem perguntar diretamente se o entrevistado utiliza determinada prática. Isso faz com que os resultados se baseiem em um conjunto contido de definições, excluindo concepções diversas que pessoas diferentes possam ter a respeito de um mesmo assunto.
+Com este caminho definido, os autores do artigo montaram as entrevistas qualitativas e quantitativas baseadas nas práticas que surgiram em cada degrau da evolução. O interessante da abordagem dos autores foi o roteiro consistir de perguntas sobre o processo utilizado, sem perguntar diretamente se o entrevistado utiliza determinada prática. Isso faz com que os resultados baseiem-se em um conjunto contido de definições, excluindo concepções diversas que pessoas diferentes possam ter a respeito de um mesmo assunto.
 
 \section{Perguntas de pesquisa} 
 Assim, a grande adoção da indústria mundial das práticas de CI/CD, aliado a pequena quantidade de trabalhos a respeito no contexto recifense e a excelente metodologia proposta pelo artigo de Schermman et al \cite{empiricalStudy2016} foram as principais motivações para o desenvolvimento deste trabalho. Para este as seguintes perguntas de pesquisa foram formadas:
@@ -42,6 +42,6 @@ Assim, a grande adoção da indústria mundial das práticas de CI/CD, aliado a 
 
 Para responder as perguntas acima foi decido reaplicar a pesquisa qualitativa do artigo \cite{empiricalStudy2016} com desenvolvedores recifenses, baseando-se também na mesma lista de definições de cada uma das práticas envolvidas no "stairway to heaven". A pesquisa qualitativa neste contexto foi considerada fundamental para garantir que os entrevistados entendessem claramente as perguntas e excluir possíveis entendimentos errados de termos em inglês, linguagem não nativa de todos os participantes. Vale salientar que não foi replicado a pesquisa quantitativa presente no artigo base, mas esta pode servir como um trabalho futuro a este.
 
-Além disso, as perguntas 1 e 3 são bem parecidas com as perguntas de pesquisa do artigo base, mas incluindo a prática de Continuous Integration. Não obstante, uma terceira pergunta foi adicionada (\emph{RQ2}), que foca na escada de evolução proposta pelo artigo. Ela tenta responder se a "stairway to heaven" é seguida no contexto de Recife, visto que, no outro, os próprios autores já refutaram esta definição com os seus resultados.
+Além disso, as perguntas 1 e 3 são bem parecidas com as perguntas de pesquisa do artigo base, mas incluindo a técnica de Continuous Integration. Não obstante, uma terceira pergunta foi adicionada (\emph{RQ2}), que foca na escada de evolução proposta pelo artigo. Ela tenta responder se a "stairway to heaven" é seguida no contexto de Recife, visto que, no outro, os próprios autores já refutaram esta definição com os seus resultados.
 
 
