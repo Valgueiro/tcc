@@ -1,0 +1,113 @@
+\chapter{Questionário Traduzido}
+
+\section{Demografia}
+
+\begin{itemize}
+\item Qual seu cargo no trabalho atualmente?
+\item Qual o tamanho da empresa para o qual você trabalha?
+\item Qual é o tamanho típico das equipes dentro da empresa que você trabalha?
+\item Quantos anos de experiência profissional em <cargo do entrevistado> você tem?
+\item Qual o domínio (contexto: educação, saúde, etc) da empresa ou projeto no qual você trabalha?
+\end{itemize}
+
+
+
+
+\section{Processo de entrega em geral}
+Dado uma funcionalidade recém-implementada, como é o processo de entrega da sua empresa a partir do commit da funcionalidade até chegar ao ambiente de produção e, portanto, aos clientes?
+
+Possíveis questões complementares:
+
+\begin{itemize}
+	\item O processo é o mesmo para toda mudança no código, isto é, é o mesmo para uma funcionalidade totalmente nova bem como para uma mudança pequena no código? Quem define/decide sobre esse “impacto” das mudanças? 
+	\item As mudanças são lançadas diretamente para todos os usuários?
+	\item O quão automatizado é esse processo?
+	\item Quanto tempo leva desde o commit de uma funcionalidade até que ela esteja disponível para os usuários?
+	\item Qual a frequência típica de entrega da sua empresa? A cada commit, uma vez por dia, uma vez por semana, etc? Como isso se relaciona com os processos de desenvolvimento de software? Por exemplo, você está fazendo entregas “sempre” ou só no fim de uma sprint?
+	\item Como os empregados (incluindo desenvolvedores) ficam informados acerca das entregas, por exemplo, qual versão está atualmente implementada, quais versões/funcionalidade estão sob teste em certos ambientes? Como essa comunicação é gerenciada entre equipes e nas equipes?
+	\item Como você julga pessoalmente seu processo de entrega? O que funciona bem, e o que não funciona?
+\end{itemize}
+
+
+\section{Papéis/Responsabilidades}
+Quais são, tipicamente, os papéis envolvidos no processo de entrega da sua empresa e quem é responsável pelo que?
+
+
+É uma abordagem mais colaborativa com times contendo pessoal de operações e pessoal de desenvolvimento, ou existem equipes dedicadas, por exemplo: o time de operações assume a partir do momento que as mudanças feitas pelo time de desenvolvimento passaram os testes e estão prontas para serem entregues?
+
+Possíveis questões complementares:
+\begin{itemize}
+	\item Quem é responsável por monitorar a entrega uma vez que ela chegou em produção?
+	\item Como você julga, pessoalmente, as definições de papéis na sua equipe? Elas fazem sentido? Algo está faltando, ou não está muito claro?
+	\item Caso haja papel de DevOps: Como DevOps é realizado dentro da sua empresa?
+\end{itemize}
+
+\section{Garantia da Qualidade}
+
+Quando é feito o commit de uma mudança no sistema de controle de versão (git, por exemplo) da sua empresa ou do seu projeto, como vocês garantem que commits errôneos ou commits que não seguem certas orientações/padrões não cheguem em produção? Como vocês garantem a qualidade do software na empresa?
+
+Possíveis questões complementares:
+\begin{itemize}
+	\item Caso seja um processo em estágios, quais estágios existem?
+	\item Caso seja em estágios: Testes críticos são selecionados e executados em estágios iniciais para obter feedback mais rapidamente?
+	\item É feito o build do software exatamente uma vez durante o processo todo, ou cada estágio requer uma build com configuração diferente? Tais arquivos de configuração são gerenciados pelos sistemas de controle de versão?
+	\item Existem estágios/barreiras de qualidade que exigem uma aprovação manual explícita?
+	\item Existe um ambiente parecido com o de produção ou alguma forma para que vocês tenham a certeza de que as mudanças vão funcionar em produção também?
+	\item As revisões de código (code reviews) são parte do seu processo de análise de qualidade(testes)? Quais as razões para que isso seja feito/não seja feito?
+	\item Você acha que o processo de análise de qualidade de vocês funciona bem? O que poderia ser melhorado, na sua opinião?
+\end{itemize}
+
+
+\section{Gerenciamento de Problemas}
+Suponha que uma nova funcionalidade ou mudança chegou em produção, mas não se comporta como esperado(*). Quais são os passos executados e por quem são executados para gerenciar problemas em caso de:
+\begin{enumerate}
+	\item Bugs devidos a erros no código
+	\item Defeitos devido a desvios dos requisitos, resultando em, por exemplo, performance ruim, mantenabilidade ruim, usabilidade ruim, etc.
+	\item Problemas com a disponibilidade de certas funcionalidades/serviços/partes da sua aplicação.
+\end{enumerate}
+
+
+Adicionalmente: Como vocês identificam ou mensuram se o sistema está exibindo um comportamento inesperado?
+
+Possíveis questões complementares:
+\begin{itemize}
+	\item Tais problemas são comuns?
+	\item Como são os problemas típicos que ocorrem em tempo de execução?
+	\item O lançamento de uma funcionalidade requer que os desenvolvedores envolvidos estejam em plantão para lidar com tais problemas?
+	\item Como tais problemas são identificados/descobertos? Existe suporte para isso fazendo uso de alguma ferramenta?
+	\item Reversões (rollbacks) são utilizados? Caso afirmativo, quanto a compatibilidade de versões, como vocês lidam com problemas quando revertendo para versões incompatíveis?
+	\item Você tem quaisquer sugestões para como prevenir uma boa parcela de problemas em tempo de execução?
+	\item Em caso de uma arquitetura baseada em serviço: O quão comum é que novas versões de certos serviços sejam incompatíveis com outros serviços já existentes?
+\end{itemize}
+
+\section{Avaliação da entrega}
+Dado a entrega contínua de novas versões, como vocês comparam se a versão mais recente é “melhor que” ou traz benefícios comparada com suas predecessoras? Como vocês avaliam se uma certa feature/mudança:
+\begin{itemize}
+	\item Está satisfazendo as demandas dos usuários
+	\item Tem o impacto desejado no lucro, performance, mantenabilidade, usabilidade, … ?
+\end{itemize}
+
+Suponha que você quer comparar duas versões da sua aplicação que foram entregues e estão em execução. Quais as métricas que você consideraria?
+
+Possíveis questões complementares caso live testing (Canary, A/B, …) for usado:
+\begin{itemize}
+	\item Qual a duração de tais testes?
+	\item Qual a quantidade? Quantos testes rodam em paralelo?
+	\item Cada um desses experimentos testa exatamente uma feature?
+	\item Como esses testes são avaliados, quando, e em quais intervalos?
+	\item Quem define as métricas e as limiares que se deve observar?
+	\item Como você se certifica que os experimentos paralelos não estão influenciando um ao outro?
+	\item Qual o escopo dos testes? Quais usuários são selecionados para tais testes e como eles são selecionados?
+\end{itemize}
+
+
+\section{Finalização}
+Caso não tenha sido perguntado ou mencionado durante a entrevista:
+\begin{itemize}
+	\item Que tipo de arquitetura tem o sistema? Monolítica, baseada em serviços (microsserviços)?
+	\item Caso teste A/B não seja utilizado: Quais são as razões para não utilizar técnicas como teste A/B?
+	\item Como você lida com funcionalidades que ainda não estão prontas para serem entregues, especialmente se elas necessitam de mudanças mais complexas através da base de código? Você faz uso de condicionais no código que previne tais funcionalidades de serem executadas até estarem prontas?
+	\item Você tem processos de entrega diferentes para projetos diferentes?
+	\item Na sua opinião, o quão automatizado os processos de entrega devem ser? Por exemplo, deve haver uma aprovação manual antes de fazer uma reversão automática para uma versão anterior (rollback) quando certos limiares não são atingidos?
+\end{itemize}
+
