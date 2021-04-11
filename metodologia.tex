@@ -6,14 +6,12 @@ Para o estudo, foi realizada uma pesquisa qualitativa através de entrevistas se
 
 \section{Pré-estudo}
 
-Com o objetivo de entender melhor sobre como as práticas de CI/CD migraram para as empresas sediadas em recife, Mateus Valgueiro (autor deste trabalho) e Heitor Samuel realizaram um pré-estudo. Primeiramente, os dois discutiram a respeito do artigo base: \emph{An empirical study on principles and practices of continuous delivery and deployment} \cite{empiricalStudy2016}. Na discussão foi definido que seria replicado apenas o estudo baseado em entrevistas semi-estruturadas para garantir o entendimento dos termos pelos entrevistados e a adequação com as definições do artigo base. 
+Com o objetivo de entender melhor sobre como as práticas de CI/CD migraram para as empresas sediadas em Recife, Mateus Valgueiro (autor deste trabalho) e Heitor Samuel realizaram um pré-estudo. Primeiramente, os dois discutiram a respeito do artigo base: \emph{An empirical study on principles and practices of continuous delivery and deployment} \cite{empiricalStudy2016}. Na discussão foi definido que seria replicado apenas o estudo baseado em entrevistas semi-estruturadas para garantir o entendimento dos termos pelos entrevistados e a adequação com as definições do artigo base. 
 
 Após a discussão, os entrevistadores acessaram o apêndice online deste \cite{empiricalStudyOnlineAppendix} para obter o guia de entrevista utilizado. Como forma de manter a consistência, foi utilizado o mesmo guia de entrevistas, assim como as mesmas definições utilizadas pelos autores. No início foi montado um arquivo com a definição de cada um dos termos envolvidos em língua portuguesa para ser utilizado como consulta caso haja alguma dúvida de definição de tópicos entre os entrevistadores.
 
 Após isso, o guia de entrevistas do estudo base \cite{empiricalStudyOnlineAppendix} também foi traduzido para português e utilizado durante as entrevistas. Um ponto importante a respeito da tradução é o fato de que alguns termos ainda foram mantidos na língua inglesa devido ao fato de serem conhecidos mundialmente nesta língua. Por exemplo, Continuous Integration, Canary Releases e Health check.
 O documento de consulta e a guia de entrevistas estão presentes no apêndice deste trabalho, ambos em sua versão traduzida.
-
-% TODO adicionar versão traduzida no apendice
 
 \section{Estrutura da Entrevista}
 
@@ -36,9 +34,17 @@ Todas as entrevistas ocorreram de forma online, através do Google Meet, e acont
 
 \section{Análise dos Dados}
 
-% TODO adicionar citação de grounded theory
+\begin{figure}[ht]
+\begin{center}
+\includegraphics[scale=0.5]{metodologia_tcc.png}
+\end{center}
+\caption[Fluxograma da Metodologia]{
+    Demonstra como funcionou o processo de coleta e análise de dados.
+}\label{fluxograma_metodologia}
+\end{figure}
 
-A análise de dados foi feita apenas pelo autor deste artigo, Mateus Valgueiro. O processo escolhido foi baseado nas fases de \emph{Coding} e \emph{Thematic Analysis} da metodologia \emph{Grounded Theory} \cite{groundedTheory}. No processo de Coding a ideia é levantar rótulos ou tags relevantes para o texto e, tradicionalmente, é feito baseado na transcrição das entrevistas. No entanto, neste trabalho o autor gerou códigos através da escuta das entrevistas. Então, como um exemplo, a seguinte citação:
+    
+A \figref{fluxograma_metodologia} apresenta uma visão geral de como funcionou o processo de coleta e análise de dados. A análise foi feita apenas pelo autor deste artigo, Mateus Valgueiro. O processo escolhido foi baseado nas fases de \emph{Coding} e \emph{Thematic Analysis} da metodologia \emph{Grounded Theory} \cite{groundedTheory}. No processo de Coding a ideia é levantar rótulos ou tags relevantes para o texto e, tradicionalmente, é feito baseado na transcrição das entrevistas. No entanto, neste trabalho o autor gerou códigos através da escuta das entrevistas. Então, como um exemplo, a seguinte citação:
 
 \begin{quotation}[]{P5}
 "Como somos uma equipe muito pequena, todos os desenvolvedores são meio que DEVOPS. Quando tem que tomar alguma decisão nós entramos em discussão e definimos por nós."
@@ -54,18 +60,11 @@ Ao final do processo ainda haviam 3 ligações entre a prática de \emph{Dark La
 
 O agrupamento entre códigos e práticas gerou a Tabela T1, que mostra uma visão geral de cada relação entre prática e entrevistado, contendo a nota dada e os códigos que justificam a nota. Esta tabela contém 147 códigos.
 
-% TODO adicionar tabela T1 e link
-% TODO devo colocar a tabela aqui de fato na metodologia??
-
-
 De posse da tabela T1 foi gerada a Tabela T2, que contem uma visão reduzida da primeira, contendo apenas as notas de cada uma das práticas para cada um dos entrevistados com as colunas ordenadas de acordo com o \emph{Stairway to Heaven} descrito no artigo base. Com a Tabela T2, também foi criada uma nova Tabela T3 com o mesmo formato da primeira, mas com as colunas ordenadas pela utilização de cada prática em ordem decrescente. Esta tem como objetivo replicar a Tabela 1 do artigo base \cite{empiricalStudy2016}.
 
 Por fim, para identificar padrões e abstrações nos códigos agrupados na Tabela T1, foi feito um trabalho de agrupamento semântico, gerando por fim a tabela T4 apresentando as novas super categorias geradas no processo de \emph{Thematic Analysis}. Neste, 17 super categorias foram geradas.
 
 É importante salientar que ainda durante o processo de levantamento de códigos surgiram tópicos relevantes que não se relacionavam diretamente com as práticas descritas, mas que são perguntados pelo questionário e relevantes para o tema tratado. Surgiram então 2 novas colunas que agregavam códigos sobre as práticas de \emph{Code Review} e de testes automáticos. Para estas foram relacionados 29 códigos, e duas super categorias foram geradas.
-
-
-% TODO devo como vou responder cada uma das perguntas de pesquisa aqui?
 
 \section{Participantes}
 

@@ -3,7 +3,7 @@ Meu trabalho de conclusão de curso
 
 Respostas para paulo:
 
-* sobre "Pesquisa de CI/CD no porto digital": nem todas as empresas pesquisadas estavam situadas no porto digital, acredito que é melhor deixar recife mesmo
+* sobre "Pesquisa de CI/CD no porto digital": nem todas as empresas pesquisadas estavam situadas no porto digital, acredito que é melhor deixar Recife mesmo
 
 * sobre metodologias ágeis: vou retirar dos cantos que voce falou, mas teve um caso que eu tive que deixar pois é o dado encontrado na fonte:
 
@@ -11,9 +11,6 @@ Respostas para paulo:
 
 
 ## TODO list
-- [ ] revisar comentários de paulo no pdf
-- [ ] revisar o caso de falar sobre tabelas na seção de metodologia
-- [ ] Colocar como responde cada uma das perguntas de pesquisa na metodologia e nos resultados
 - [ ] ajeitar referencias de links
 - [ ] Introdução
 - [ ] Conclusão E trabalhos relacionados
@@ -21,16 +18,23 @@ Respostas para paulo:
   - [ ] CI/Cd
   - [ ] Práticas do stairway to heaven
   - [ ] Code review e testes automáticos
+
+
+## Done
 - [x] Pegar uma referencia sobre Grounded Theory
 - [x] Fazer imagem demonstrando a metodologia
 - [x] Detalhar sobre o caso de CAN de P4
 - [X] Resultados
 - [X] Metodologia
 - [X] Motivação
+- [x] Colocar como responde cada uma das perguntas de pesquisa na metodologia e nos resultados
+- [x] revisar comentários de paulo no pdf
+- [x] revisar o caso de falar sobre tabelas na seção de metodologia
 
-### Perguntas:
+### Perguntas/Coisas a falar:
 - Como mostrar o agrupamento semântico. Apêndice?
-- 
+- Como mostrar a tabela T1?
+- o contexto é sobre Recife como um todo, não apenas o porto digital
 
 
 
