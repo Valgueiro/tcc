@@ -17,10 +17,10 @@ Meu trabalho de conclusão de curso
   
 
 ## TODO list
-- [ ] ajeitar referencias de links
+- [ ] Ajeitar comentários de Klissiomara
 - [ ] Introdução
 - [ ] Referencial Teórico
-  - [ ]
+- [ ] ajeitar referencias de links
 
 
 ## Done
