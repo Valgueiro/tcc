@@ -3,7 +3,7 @@
 Neste cápitulo será abordada a motivação por trás da pesquisa produzida. Na primeira seção, será falado um pouco sobre a grande adoção das práticas ágeis pela indústria. Já na segunda seção, será abordada a falta de estudos voltados para o contexto Recifense. A terceira discorre sobre o artigo base que serviu de motivação para este trabalho. A última seção contém as perguntas de pesquisa que este trabalho tenta responder.
 
 \section{A grande adoção de CI e CD}
-As práticas de integração e \emph{deployment} contínuos (\emph{Continuous Integration} e \emph{Continuous Deployment}) já são muito difundidas e utilizadas por empresas de tecnologia em todo o mundo. Segundo \cite{stateAgileReport2020}, 95\% dos participantes reportaram que sua organização pratica metodologias ágeis de desenvolvimento e 55\% utilizam a técnica de integração continua. Também nesta mesma pesquisa foi encontrado que 36\% utilizam a técnica de \emph{deployment} contínuos. 
+As práticas de integração e \emph{deployment} contínuos (\emph{Continuous Integration} e \emph{Continuous Deployment}) já são muito difundidas e utilizadas por empresas de tecnologia em todo o mundo. Segundo a pesquisa realizada pela empresa \emph{digital.ai} \cite{stateAgileReport2020}, 95\% dos participantes reportaram que sua organização pratica metodologias ágeis de desenvolvimento e 55\% utilizam a técnica de integração continua. Também nesta mesma pesquisa foi encontrado que 36\% utilizam a técnica de \emph{deployment} contínuos. 
 
 Estes números elevados são causados principalmente pelos benefícios que a utilização destas técnicas trazem para a equipe e para o produto em desenvolvimento. Ainda de acordo com \cite{stateAgileReport2020}, entre as razões para adoção de CI/CD, as principais são aceleração de entregas de software (71\%), e aumentar a produtividade (51\%) e a qualidade do software (42\%). 
 
@@ -13,7 +13,7 @@ Especificamente sobre integração contínua, a prática hoje em dia já é bast
 
 Ainda há, no entanto, uma grande falta de estudos a respeito de como essas práticas foram importadas para a maioria das empresas \cite{empiricalStudy2016}, inclusive as de Recife, um dos grandes polos tecnológicos do Brasil. Somente no Porto Digital, localizado na capital pernambucana, há cerca de 330 empresas e 11 mil trabalhadores com faturamento anual de R\$ 2,3 bilhões em 2019 \cite{portoDigital}.
 
-O presente trabalho levantará as principais dores sentidas pelos desenvolvedores recifenses para que essas sejam pesquisadas com mais afinco para que sejam eliminadas. Um estudo a respeito de como as práticas de CI/CD migraram para a industria de Recife funciona ainda como um \emph{benchmark} de como as empresas estão se portando em relação às novidades presentes na literatura nos últimos anos, assim como levanta possíveis discrepâncias entre empresas situadas na área e as grandes corporações. 
+O presente trabalho procura entender sobre a utilização das práticas de CI/CD nas empresas de Recife para que esses dados sirvam como objeto de pesquisa para levantamento de possíveis dores sentidas pelos desenvolvedores locais que justifiquem a adoção ou não destas práticas. Um estudo a respeito de como as técnicas de integração e \emph{deployment} contínuo migraram para a industria de Recife funciona ainda como um \emph{benchmark} de como as empresas estão se portando em relação às novidades presentes na literatura nos últimos anos, assim como levanta possíveis discrepâncias entre empresas situadas na área e as grandes corporações. 
 
 
 \section{O artigo base}
@@ -32,12 +32,12 @@ Durante o trabalho os autores definem a \emph{stairway to heaven} (escada para o
 
 \end{figure}
 
-Através desta metodologia os autores descobriram que, no contexto estudado, problemas arquiteturais são geralmente uma das maiores barreiras para a adoção de CD. Não obstante, a técnica de \emph{Feature Toggles} como forma de realizar entregas parciais adiciona uma complexidade demasiada e não saudável ao código. Por fim eles concluem que os desenvolvedores necessitam também de um protocolo baseado em princípios que estabeleçam quando deve-se utilizar técnicas de entregas parciais, por exemplo, que funcionalidades e métricas devem ser testadas por um teste A/B.
+Através desta metodologia os autores descobriram que, no contexto estudado, problemas arquiteturais são geralmente uma das maiores barreiras para a adoção de CD. Não obstante, a técnica de \emph{Feature Toggles} \cite{featureToggles} como forma de realizar entregas parciais adiciona uma complexidade demasiada e não saudável ao código. Por fim eles concluem que os desenvolvedores necessitam também de um protocolo baseado em princípios que estabeleçam quando deve-se utilizar técnicas de entregas parciais, por exemplo, que funcionalidades e métricas devem ser testadas por um teste A/B \cite{testsAB}.
 
 Um trabalho que utilize uma adaptação da metodologia aplicada a uma amostra de um outro contexto pode revelar discrepâncias e semelhanças entre os dois ambientes de estudo. As discrepâncias levantariam pontos de questionamento, pesquisa e até possíveis melhorias aos ambientes envolvidos. Já as semelhanças podem assegurar que as práticas utilizadas já acharam o seu lugar na indústria e funcionam bem assim como a teoria propunha.
 
 \section{Perguntas de pesquisa} 
-Assim, a grande adoção da indústria mundial das práticas de CI/CD, aliado a pequena quantidade de trabalhos a respeito no contexto recifense e a excelente metodologia proposta pelo artigo \cite{empiricalStudy2016} foram as principais motivações para o desenvolvimento deste trabalho. Para este as seguintes perguntas de pesquisa foram formadas:
+Assim, a grande adoção da indústria mundial das práticas de CI/CD, aliado a falta de trabalhos a respeito no contexto recifense e a excelente metodologia já validada proposta pelo artigo \cite{empiricalStudy2016} foram as principais motivações para o desenvolvimento deste trabalho. Para este as seguintes perguntas de pesquisa foram formadas:
 
 \begin{enumerate}
 \item Quais as práticas de CI/CD são utilizadas pelas empresas em Recife?

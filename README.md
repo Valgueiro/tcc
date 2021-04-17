@@ -17,13 +17,15 @@ Meu trabalho de conclusão de curso
   
 
 ## TODO list
-- [ ] Ajeitar comentários de Klissiomara
 - [ ] Introdução
 - [ ] Referencial Teórico
 - [ ] ajeitar referencias de links
+- [ ] Adicionar referencias para cada uma das práticas no capítulo de resultados.
+- [ ] Dar uma olhada no paper de Klissiomara para melhorar as ameaças a validade.
 
 
 ## Done
+- [x] Ajeitar comentários de Klissiomara
 - [x] Pegar uma referencia sobre Grounded Theory
 - [x] Fazer imagem demonstrando a metodologia
 - [x] Detalhar sobre o caso de CAN de P4
@@ -36,13 +38,6 @@ Meu trabalho de conclusão de curso
 - [x] Conclusão e trabalhos relacionados
 
 ### Perguntas/Coisas a falar:
-- Como mostrar o agrupamento semântico. Apêndice?
-- Como mostrar a tabela T1?
-- o contexto é sobre Recife como um todo, não apenas o porto digital
-  * sobre "Pesquisa de CI/CD no porto digital": nem todas as empresas pesquisadas estavam situadas no porto digital, acredito que é melhor deixar Recife mesmo
-
-  * sobre metodologias ágeis: vou retirar dos cantos que voce falou, mas teve um caso que eu tive que deixar pois é o dado encontrado na fonte:
-
-      "Segundo [1], 95% dos participantes reportaram que sua organização pratica metodologias ágeis e 55% utilizam a técnica de integração continua."
-
-
+- Ainda preciso Adicionar referencias para cada uma das práticas no capítulo de resultados e dar uma olhada no paper de Klissiomara para melhorar as ameaças a validade.
+- Não tenho a entrevista transcrita de algumas pessoas, por isso nao consigo colocar a citação de todo mundo que eu comento o caso específico. Voce acha que vale a pena colocar a citação mesmo sem a transcrição?
+- Sobre colocar em cada lugar que eu comento uma quantidade de entrevistados, quem são eles (por exemplo: "4 entrevistados (P1,P5,P6 e P9)...."). Eu pessoalmente achei que o texto ficou um pouco pesado, mas entendo totalmente que seria bem útil para o leitor. O que você acha disso Paulo? Tentei mostrar um exemplo de como ficaria na seção de 5.4.1.1 Trunk Based Development [TBD].
