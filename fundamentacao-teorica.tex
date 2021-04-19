@@ -1,4 +1,71 @@
 \chapter{Fundamentação Teórica}
 
 Este capítulo tem como objetivo apresentar conceitos importantes para a
-construção desta pesquisa....
+construção desta pesquisa e entendimento dos resultados obtidos. Assim, o capítulo abordará conceitos de metodologias ágeis, DevOps, técnicas de integração, entrega e \emph{deployment} contínuous e práticas relacionadas. Por fim, serão abordados alguns dos trabalhos relacionados a este presentes na literatura.
+
+
+\section{Metodologias Ágeis}
+
+A citação a seguir retirada da dissertação \cite{experienciaComAgil} define bem os como os métodos ágeis surgiram.
+
+    
+\begin{quotation}[]{Dairton Luiz Bassi Filho}
+    "Durante a evolução dos processos de Engenharia de Software, a
+indústria se baseou nos métodos tradicionais de desenvolvimento de
+software, que definiram por muitos anos os padrões para criação de
+software nos meios acadêmico e empresarial. Porém, percebendo que a
+indústria apresentava um grande número de casos de fracasso, alguns
+líderes experientes adotaram modos de trabalho que se opunham aos
+principais conceitos das metodologias tradicionais. Aos poucos, foram
+percebendo que suas formas de trabalho, apesar de não seguirem os
+padrões no mercado, eram bastante eficientes. Aplicando-as em vários 
+projetos, elas foram aprimoradas e, em alguns casos, chegaram a se
+transformar em novas metodologias de desenvolvimento de software.
+Essas metodologias passaram a ser chamadas de leves por não
+utilizarem as formalidades que caracterizavam os processos tradicionais
+e por evitarem a burocracia imposta pela utilização excessiva de
+documentos. Com o tempo, algumas delas ganharam destaque nos
+ambientes empresarial e acadêmico, gerando grandes debates,
+principalmente relacionados à confiabilidade dos processos e à
+qualidade do software.
+\end{quotation}
+
+É notório que a antecipação total de requisitos, como propunha o modelo de Cascata antigo, era a fórmula perfeita para a falha do projeto, como comenta \cite{agileSoftwareDevelopment}. Principalmente em ambientes de desenvolvimento de software, a metodologia mais interessante deve se basear em entregas parciais rápidas, com o objetivo de encontrar erros em fases iniciais e gerar um produto final mais de acordo com a expectativa do cliente. A ideia, como comenta o artigo, é reduzir o custo de mudanças durante o todo o desenvolvimento do projeto. As metodologias ágeis surgiram então com o objetivo de suprir essas necessidades.
+
+No geral, é possível perceber que as metodologias ágeis conseguiram encantar as empresas de desenvolvimento de software principalmente por dar a habilidade de gerenciar mudanças de prioridades, ajudar no alinhamento entre as equipes de mercado e de tecnologia e aumentar a velocidade de entregas, de acordo com \cite{stateAgileReport2020}. Pesquisas como esta demonstram o sucesso que esse novo paradigma obteve no contexto de produção de aplicações de T.I. 
+
+\subsection{Scrum}
+Uma das metodologias ágeis que apresenta uma grande quantidade de usuários é o SCRUM \cite{scrumBook}. Ele é um framework de gerenciamento de projetos que estabelece uma série de regras e cerimônias ao processo com o objetivo de garantir entregas interativas e incrementais. Mesmo tendo sido criado em 1993 por Jeff Suntherland, a metodologia é - entre as ágeis - a mais utilizada atualmente: de acordo com a pesquisa da \emph{digital.ia} de 2020 \cite{stateAgileReport2020}, 58\% das equipes utilizam o framework na sua organização.
+
+O scrum consiste em...
+* daily
+* retrospectiva
+* entregas parciais
+* Scrum master e PO (??)
+
+
+\section{Devops}
+ 
+    * se tornou uma buzzword atualmente
+    * baseado na Wikpedia, devops é um conjunto de práticas que combinam o desenvolvimento de software e as operações. A  ideia é diminuir o os silos entre as duas equipes.
+
+
+\subsection{Integração Contínua}
+
+\subsection{Entrega e \emph{Deployment} Contínuo}
+* continuous integration
+* continuous delivery
+    * companias como flickrs postaram no passado em seus blogs a quantidade de "deploys" que eram feitos por dia/semana.
+    * a ideia é que cada mudança que cada desenvolvedor faz é mandada diretamente para o ambiente de produção.
+    As features podem não estar devidamente aparentes para os consumidores, através de feature toggles.
+    * isso talvez não seja para todas as empresas, visto que organizações podem ter requisitos e políticas que necessitem de estágios manuais de validação
+    * diferença entre continuous delivery e deployment. Delivery nãos ignifica que o código está indo sempre para produção, mas sim que ele está sempre no estado pronto para produção. 
+    * talvez continuous deployment seja apenas uma opção, mas que não seja viável para a sua aplicação estar deployando sempre.
+    * 
+
+\subsection{Entregas Parciais}
+
+* code review
+* testes automáticos
+
+\section{Trabalhos Relacionados}
