@@ -4,7 +4,6 @@ Meu trabalho de conclusão de curso
 
 ## TODO list
 - [ ] ajeitar referencias de links
-- [ ] Dar uma olhada no paper de Klissiomara para melhorar as ameaças a validade.
 - [ ] Revisar apendice
   - [ ] Adicionar tabela T1
   - [ ] Adicionar supercategorias
@@ -26,4 +25,5 @@ Meu trabalho de conclusão de curso
 - [x] Introdução
 - [x] Referencial Teórico
 - [x] Adicionar referencias para cada uma das práticas no capítulo de resultados.
+- [x] Dar uma olhada no paper de Klissiomara para melhorar as ameaças a validade.
 
