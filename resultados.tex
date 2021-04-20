@@ -88,13 +88,13 @@ Para poder definir padrões encontrados na amostra o autor, após a fase de agru
 
 \subsection{Integração Contínua}
 
-Com a \figref{tabela_t3} é possível perceber que, apesar da grande disseminação a respeito de informações relacionadas a infraestrutura e manutenção de software - ligadas à prática de \emph{Developer Awareness} - estar em primeiro lugar, as outras técnicas que compõem o conjunto de \emph{Continuous Integration} ainda não estão disseminadas na nossa amostra.
+Com a \figref{tabela_t3} é possível perceber que, apesar da grande disseminação a respeito de informações relacionadas a infraestrutura e manutenção de software - ligadas à prática de \emph{Developer Awareness} \cite{awa} - estar em primeiro lugar, as outras técnicas que compõem o conjunto de \emph{Continuous Integration} ainda não estão disseminadas na nossa amostra.
 
-Nesta subseção, serão abordadas a seguir cada uma das práticas ligadas ao processo de Integração contínua: \emph{Trunk Based Development} [TBD], \emph{Feature Toggles} [FT] \cite{featureToggles} e \emph{Developer Awareness} [AWA] .
+Nesta subseção, serão abordadas a seguir cada uma das práticas ligadas ao processo de Integração contínua: \emph{Trunk Based Development} [TBD] \cite{devAndDeploymentFB}, \emph{Feature Toggles} [FT] \cite{featureToggles} e \emph{Developer Awareness} [AWA] .
 
 
 \subsubsection{Trunk Based Development [TBD]}
-Na amostra é possível perceber que a técnica de \emph{Trunk Based Development} [TBD] não é tão amplamente adotada, visto que apenas 4 entrevistados (P4, P7, P8 e P11) utilizam ao menos parcialmente. Destes, 2 (P7 e P11) comentam que entregam novas versões aos clientes baseados em novas funcionalidades, e não em \emph{sprints}. Já entre os que não utilizam, 5 (P1, P2, P3, P5 e P6) integram o código apenas no final da \emph{sprint}. Deste grupo, 2 (P2 e P5) utilizam a metodologia \emph{Git Flow} \cite{gitFlow}, que define uma maneira de manusear várias branches ao mesmo tempo de modo que os desenvolvedores deparem com o mínimo de conflitos possível e que software seja entregue em versões bem definidas.
+Na amostra é possível perceber que a técnica de \emph{Trunk Based Development} [TBD] não é tão amplamente adotada, visto que apenas 4 entrevistados utilizam ao menos parcialmente. Destes, 2 comentam que entregam novas versões aos clientes baseados em novas funcionalidades, e não em \emph{sprints}. Já entre os que não utilizam, 5 integram o código apenas no final da \emph{sprint}. Deste grupo, 2 utilizam a metodologia \emph{Git Flow} \cite{gitFlow}, que define uma maneira de manusear várias branches ao mesmo tempo de modo que os desenvolvedores deparem com o mínimo de conflitos possível e que software seja entregue em versões bem definidas.
 
 \subsubsection{Feature Toggles [FT]}
 
@@ -114,7 +114,7 @@ Na amostra é possível identificar que a prática de \emph{Developer Awareness}
 
 \subsection{Deployment Contínuo}
 
-Nesta subseção, serão abordadas as práticas ligadas ao processo de \emph{Deployment} contínuo: \emph{Health Checks} [HC], \emph{Developer on Call} [DOC] e \emph{Deployment Pipeline} [PIP]. É possível inferir, baseado principalmente na \figref{tabela_t3}, que as técnicas ligadas ao processo estão presentes na maioria das equipes da amostra: as 3 estão nas quatro primeiras colocações. 
+Nesta subseção, serão abordadas as práticas ligadas ao processo de \emph{Deployment} contínuo: \emph{Health Checks} [HC] \cite{devopsBook}, \emph{Developer on Call} [DOC] \cite{devAndDeploymentFB} e \emph{Deployment Pipeline} [PIP] \cite{devopsBook}. É possível inferir, baseado principalmente na \figref{tabela_t3}, que as técnicas ligadas ao processo estão presentes na maioria das equipes da amostra: as 3 estão nas quatro primeiras colocações. 
 
 \subsubsection{Health Checks [HC]}
 
@@ -146,7 +146,7 @@ Em relação à prática de \emph{Deployment Pipeline} [PIP] é possível inferi
  
 \subsection{Entregas Parciais}
 
-Nesta subseção, serão abordadas as práticas ligadas ao processo de Entregas Parciais: \emph{Canary Releases} [CAN], \emph{Dark Launches} [DAR] e Testes A/B [AB] \cite{testsAB}. Na amostra foi possível perceber que todas as técnicas são muito pouco utilizadas: todas estão entre as 4 últimas colocações. É valido também notar que as 3 mantiveram a mesma ordem de utilização do processo do artigo base \cite{empiricalStudy2016}.
+Nesta subseção, serão abordadas as práticas ligadas ao processo de Entregas Parciais: \emph{Canary Releases} [CAN] \cite{continuousDeliveryBook}, \emph{Dark Launches} [DAR] \cite{devAndDeploymentFB} e Testes A/B [AB] \cite{testsAB}. Na amostra foi possível perceber que todas as técnicas são muito pouco utilizadas: todas estão entre as 4 últimas colocações. É valido também notar que as 3 mantiveram a mesma ordem de utilização do processo do artigo base \cite{empiricalStudy2016}.
 
 \subsubsection{Canary Releases [CAN]}
 
@@ -185,7 +185,7 @@ Esta subseção abordará sobre os dois tópicos marginais que foram levantados 
 
 \subsection{Code Review}
 
-A prática de \emph{Code Review} é bem vista pela maioria dos entrevistados, considerado uma técnica importante e essencial para o controle de qualidade de código. As razões para o uso são diversas, desde de impor boas práticas - por P7 - até o compartilhamento e nivelamento do conhecimento - por P11.
+A prática de \emph{Code Review} \cite{codeReview} é bem vista pela maioria dos entrevistados, considerado uma técnica importante e essencial para o controle de qualidade de código. As razões para o uso são diversas, desde de impor boas práticas - por P7 - até o compartilhamento e nivelamento do conhecimento - por P11.
 
 \begin{quotation}[]{P2 - WEB - Corp}
     "... a partir do momento que o sistema vai crescendo, o próprio desenvolvedor não tem a noção de que aquela sua mudança não é a melhor forma de fazer e que pode quebrar outras partes do sistema..."

@@ -1,7 +1,7 @@
 \chapter{Fundamentação Teórica}
 
 Este capítulo tem como objetivo apresentar conceitos importantes para a
-construção desta pesquisa e entendimento dos resultados obtidos. Assim, o capítulo abordará conceitos de metodologias ágeis, DevOps, técnicas de integração, entrega e \emph{deployment} contínuous e práticas relacionadas. Por fim, serão abordados alguns dos trabalhos relacionados a este presentes na literatura.
+construção desta pesquisa e entendimento dos resultados obtidos. Assim, o capítulo abordará conceitos de metodologias ágeis, DevOps, técnicas de integração, entrega e \emph{deployment} contínuos e práticas relacionadas. Por fim, serão abordados alguns dos trabalhos relacionados a este presentes na literatura.
 
 
 \section{Metodologias Ágeis}
@@ -36,7 +36,7 @@ No geral, é possível perceber que as metodologias ágeis conseguiram encantar 
 
 \vspace{3mm}
 \subsection{SCRUM}
-Uma das metodologias ágeis que apresenta uma grande quantidade de usuários é o SCRUM \cite{scrumBook}. Ele é um framework de gerenciamento de projetos que estabelece uma série de regras e cerimônias ao processo com o objetivo de garantir entregas interativas e incrementais. Mesmo tendo sido criado em 1993 por Jeff Suntherland, a metodologia é - entre as ágeis - a mais utilizada atualmente: de acordo com a pesquisa da \emph{digital.ia} de 2020 \cite{stateAgileReport2020}, 58\% das equipes utilizam o framework na sua organização.
+Uma das metodologias ágeis que apresenta uma grande quantidade de usuários é o SCRUM \cite{scrumBook}. Ele é um framework de gerenciamento de projetos que estabelece uma série de regras e cerimônias ao processo com o objetivo de garantir entregas iterativas e incrementais. Mesmo tendo sido criado em 1993 por Jeff Suntherland, a metodologia é - entre as ágeis - a mais utilizada atualmente: de acordo com a pesquisa da \emph{digital.ia} de 2020 \cite{stateAgileReport2020}, 58\% das equipes utilizam o framework na sua organização.
 
 \begin{figure}[ht]
 \begin{center}
@@ -57,7 +57,7 @@ Com a pesquisa da empresa \emph{digital.ia} \cite{stateAgileReport2020} é poss�
 
 \section{DevOps}
 
-Mesmo com a flexibilidade e agilidade das metodologias ágeis comentados na seção anterior, as empresas ainda estavam necessitadas de um método de reduzir o tempo entre entregas de novas features. Esta foi a principal motivação para a criação da cultura de \emph{DevOps} \cite{devopsBook}. 
+Mesmo com a flexibilidade e agilidade das metodologias ágeis comentadas na seção anterior, as empresas ainda estavam necessitadas de um método de reduzir o tempo entre entregas de novas features. Esta foi a principal motivação para a criação da cultura de \emph{DevOps} \cite{devopsBook}. 
 
 \begin{figure}[ht]
 \begin{center}
@@ -68,7 +68,7 @@ Mesmo com a flexibilidade e agilidade das metodologias ágeis comentados na seç
 }\label{devops}
 \end{figure}
 
-\emph{DevOps} é definido como uma série de práticas que buscam reduzir o tempo entre a finalização de uma nova funcionalidade até que esta esteja em produção, garantindo ainda o máximo de qualidade da mesma. Mesmo contendo o tempo como uma das principais preocupações, é importante também para o método observar a importância da qualidade do que está sendo entregue em vários aspectos: segurança, disponibilidade, confiabilidade. Não adianta entregar funcionalidades rápidamente se essas não se comportam de acordo com o esperado ou expõem o software à ataques maliciosos.
+\emph{DevOps} é definido como uma série de práticas que buscam reduzir o tempo entre a finalização de uma nova funcionalidade até que esta esteja em produção, garantindo ainda o máximo de qualidade da mesma. Mesmo contendo o tempo como uma das principais preocupações, é importante também para o método observar a importância da qualidade do que está sendo entregue em vários aspectos: segurança, disponibilidade, confiabilidade. Não adianta entregar funcionalidades rapidamente se essas não se comportam de acordo com o esperado ou expõem o software a ataques maliciosos.
 
 Para atingir o seu objetivo, de acordo com \cite{devopsWiki}, a cultura de \emph{DevOps} prega a quebra de silos entre os desenvolvedores de software (Dev) e os administradores de sistema (Ops). Melhorar a comunicação entre os dois papéis e impulsionar a automação de processos e o monitoramento em todas as fases de desenvolvimento de um software auxiliam as empresas no gerenciamento de lançamento de novas versões e no processo de garantia de qualidade.
 
@@ -88,7 +88,7 @@ Outra prática relacionada a técnica de integração contínua é o chamado \em
 
 A técnica de \emph{Continuous Delivery} (entrega contínua ou CD) define que o software tem que estar a qualquer momento pronto para ser enviado para produção \cite{fowlerCD}. Para que a técnica de entrega contínua funcione como o esperado, é necessário principalmente que o software esteja pronto para \emph{deploy} durante todo o ciclo de vida e que o time sempre priorize deixar o código pronto para produção ao invés de priorizar novas funcionalidades.
 
-Muitas vezes a técnica de \emph{Continuous Delivery} é confundida com a de \emph{Continuous Deployment}. No entanto, esta última significa que o código é automaticamente colocado em produção sempre que possível, resultando em múltiplos \emph{deployments} por dia. Com a entrega contínua, a empresa pode escolher ter um processo de entregas mais devagar. Outro ponto importante é que para se ter \emph{deployment} contínuo, é necessário ter entrega contínua.
+Muitas vezes a técnica de \emph{Continuous Delivery} é confundida com a de \emph{Continuous Deployment}. No entanto, esta última significa que o código é automaticamente colocado em produção sempre que possível, resultando em múltiplos \emph{deployments} por dia. Com a entrega contínua, a empresa pode escolher ter um processo de entregas mais devagar, mesmo tendo o software sempre pronto para utilização. Outro ponto importante é que para se ter \emph{deployment} contínuo, é necessário ter entrega contínua.
 
 A técnica de \emph{Continuous deployment} foi bastante difundida através do exemplo de empresas como a \emph{Flickr}, que em 2009 comentou sobre seus mais de 10 \emph{deploys} diários \cite{flickrTalk}, antes mesmo o termo \emph{DevOps} ser inventado. 
 
@@ -98,12 +98,24 @@ Depois da entrega de uma nova versão, \emph{health checks} \cite{devopsBook} s�
 
 Para garantir ainda mais uma colaboração maior entre desenvolvedores e o time de operações, surgiu a prática de \emph{developer on call} \cite{devAndDeploymentFB}. Esta sugere que o desenvolvedor responsável pela funcionalidade recém lançada fique disponível por tempo extra após o lançamento em produção. Caso haja algum erro, ele será a pessoa mais propícia a resolvê-lo o mais rápido possível.
 
-    * isso talvez não seja para todas as empresas, visto que organizações podem ter requisitos e políticas que necessitem de estágios manuais de validação
-
-
 \subsection{Entregas Parciais}
+Geralmente visto como o epítome de entrega contínua, a prática de \emph{partial rollouts} (ou entregas parciais) pode ser definida como um processo de garantia de qualidade e validação de requisitos que ocorrem em tempo de execução \cite{empiricalStudy2016}. Dentre as técnicas ligadas, podemos citar \emph{canary releases} \cite{continuousDeliveryBook}, que define o ato de enviar versões apenas para uma parte dos usuários ativos. Isto serve para testar mudanças no software primeiramente com uma parcela pequena de clientes.
 
-* code review
-* testes automáticos
+Outra prática relacionada a técnica é a de Testes A/B \cite{testsAB}. Ela se baseia no teste concorrente de duas ou mais versões rodando paralelamente, que se diferem em um ponto isolado do sistema. A ideia é avaliar através de medidas estatísticas de uso e performance do sistema quais das versões é a mais pertinente aos requisitos do software. O teste pode mostrar desde versões que representam um tempo de resposta mais rápido para o usuário, até o lugar que um botão deve aparecer para vender mais produtos.
+
+A prática de \emph{dark launches} \cite{devAndDeploymentFB} também se enquadra dentro das técnicas de entregas parciais. Ela é utilizada para testes de funcionalidades no ambiente de produção, mas sem a necessidade de habilitar a mesma para os usuários. Geralmente é utilizado para testar excentricidades encontradas especificamente apenas em produção.  
+
+
+\section{Code Review}
+
+A técnica de \emph{code review} \cite{codeReview} consiste em uma inspeção manual das mudanças por desenvolvedores diferentes daquele responsável pelo desenvolvimento da mudança. Esta é uma técnica utilizada desde projetos Open Source até softwares industriais. Serve principalmente como forma de compartilhar conhecimento e fomentar discussões produtivas a respeito de soluções produzidas pela equipe.
 
 \section{Trabalhos Relacionados}
+
+Há vários trabalhos relacionados a benefícios e barreiras que existem na adoção de integração contínua em contextos variados. É possível perceber que no geral os desenvolvedores gostam de utilizar CI por garantir um desenvolvimento de uma forma mais segura e confiante \cite{googleCi} e por se sentirem mais produtivos \cite{hilton2016}. É possível perceber também que os desenvolvedores ainda acham que as ferramentas de CI são complicadas e difíceis de configurar \cite{hilton2016}. 
+
+É interessante levantar ainda no contexto de integração contínua que não utilizar as ferramentas voltadas para esta técnica leva a práticas não saudáveis de desenvolvimento \cite{citheater2019}. Outro estudo encontrou que a utilização da técnica apresenta um \emph{trade-off} entre velocidade e certeza no que diz respeito a garantia de qualidade do software \cite{hilton2016}.
+
+Já a respeito de \emph{deployment} contínuo, foi encontrada a visão dos desenvolvedores do Facebook e de OANDA a respeito de \emph{Continuous Deployment} \cite{savor2015}. O artigo mostra que os desenvolvedores preferem \emph{deployments} mais rápidos por gerar maior qualidade de software e maior produtividade. Contudo, eles acreditam que há uma instabilidade maior e é uma metodologia inviável para sistemas críticos.
+
+Podemos ainda citar o artigo base deste trabalho \cite{empiricalStudy2016}, que apresenta uma pesquisa empírica a respeito dos princípios e práticas de entrega e \emph{deployment} contínuos em empresas européias e norte-americanas. Os autores encontram que umas das principais barreiras para a adoção de CD são problemas arquiteturais. Além disso, percebe-se que \emph{feature toggles} como uma implementação de técnicas de entregas parciais levam a uma complexidade de código indesejada.
