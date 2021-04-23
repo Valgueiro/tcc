@@ -1,1 +1,29 @@
 \chapter{Guia de Entrevistas traduzido}
+
+Aqui temos as definições de cada uma das práticas (baseado nas definições do artigo base)
+
+\section{Continuous Integration}
+
+Desenvolvedores integram código em um repositório compartilhado múltiplas vezes ao dia.
+\begin{itemize}
+    \item  Trunk based Development [TBD]: Todos os times contribuem para uma única branch (master, trunk ou mainline). TBD requer maneiras de ativar e desativar código individualmente se não estiver pronto para produção.
+    \item  Feature Toggle [FT]: Condição envolvendo uma flag ou um parâmetro externo decidindo que bloco executar. Também é bastante usado em técnicas de Partial Rollouts.
+    \item  Full Developer Awareness [AWA]: Outras vezes mencionada como transparência ou intercomunicação. A ideia é quebrar os silos entre os desenvolvedores e o processo de release, status e distribuição.
+\end{itemize}
+
+\section{Continuous Deployment}
+Assume que o produto permanece sempre em um estado de “entregável”.
+\begin{itemize}
+    \item Health Checks [HC]: Depois do deploy em qualquer ambiente, ele serve para avaliar o código implantado em produção. São parâmetros definidos pela equipe que dizem se o sistema está rodando de maneira esperada (por exemplo, conexão com o banco ativa, se o serviço está ativo, etc). Geralmente é ativado também um sistema de monitoramento que utiliza o health check para garantir que o básico está funcionando.
+    \item Developer on call [DOC]: Desenvolvedor responsável pelo deploy deve ficar disponível por um tempo para resolver problemas referentes às mudanças que ele entregou ao cliente final, que, devido a familiaridade com o código recente, conseguirá resolver mais rapidamente.
+    \item Deployment Pipeline [PIP]: Consiste em múltiplos passos definidos que qualquer mudança tem que passar antes de chegar para produção. Esses passos podem tratar da compilação do código, da execução de testes em diferentes ambientes, entre outras coisas. Totalmente ou parcialmente automatizada.
+\end{itemize}
+
+
+% TODO fix me
+% \section{Partial Rollouts}
+% \begin{itemize}
+%     \item Canary Releases [CAN]: os releases são disponibilizados apenas para uma parcela da base de usuários. Isto serve para testar novos comportamentos ou features, tanto a respeito de design da aplicação quanto performance e outras métricas. Chrome e Edge fazem isto.
+%     \item Dark Launches [DAR]: Lançamento de feature em produção em uma rota acessível exclusivamente para o time de desenvolvimento, para que possam verificar como a funcionalidade nova se comporta no ambiente final de entrega antes de disponibilizar o acesso aos clientes. Exemplo: antes de mudar o layout de uma página index.html faz-se as mudanças em uma index_dark_launch.html, mas apenas os desenvolvedores sabem como acessar essa segunda página.
+%     \item A/B Testing [AB]: Lançamento de uma feature/modificação no sistema para uma parcela dos usuários (parcela A) enquanto o restante (parcela B) não recebe tais mudanças. Isso permite que sejam feitas métricas sobre qual mudança é mais benéfica ao sistema e aos usuários (observando o comportamento dos grupos A e B) antes de decidir se a feature/mudança será tida como definitiva para o sistema ou não. Instagram e Netflix são bastante conhecidos por fazerem isto.
+% \end{itemize}

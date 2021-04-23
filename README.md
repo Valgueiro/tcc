@@ -5,7 +5,6 @@ Meu trabalho de conclusão de curso
 ## TODO list
 - [ ] Revisar apendice
   - [ ] Adicionar tabela T1
-  - [ ] Adicionar supercategorias
 - [ ] Abstract <depois do review>
 
 
@@ -26,4 +25,5 @@ Meu trabalho de conclusão de curso
 - [x] Referencial Teórico
 - [x] Adicionar referencias para cada uma das práticas no capítulo de resultados.
 - [x] Dar uma olhada no paper de Klissiomara para melhorar as ameaças a validade.
+- [X] Adicionar supercategorias
 
