@@ -3,7 +3,6 @@ Meu trabalho de conclusão de curso
   
 
 ## TODO list
-- [ ] ajeitar referencias de links
 - [ ] Revisar apendice
   - [ ] Adicionar tabela T1
   - [ ] Adicionar supercategorias
@@ -11,6 +10,7 @@ Meu trabalho de conclusão de curso
 
 
 ## Done
+- [x] ajeitar referencias de links
 - [x] Ajeitar comentários de Klissiomara
 - [x] Pegar uma referencia sobre Grounded Theory
 - [x] Fazer imagem demonstrando a metodologia
