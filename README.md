@@ -3,8 +3,6 @@ Meu trabalho de conclusão de curso
   
 
 ## TODO list
-- [ ] Revisar apendice
-  - [ ] Adicionar tabela T1
 - [ ] Abstract <depois do review>
 - [ ] Analisar sobre criar visualização comparativa do stairway to heaven comparativo sugerida por klissiomara. "Acho que não tem muito como, mas ficaria bem legal se fosse possível visualizar os 3 numa mesma figura, a comparação seria mais fácil: a escada, a tabela deles (só com os 11 primeiros dele para ficar padrão com a sua) e a sua (com os seus 11).  Poderia, de repente colocar num apêndice uma figura com os 3 juntos, a escada no topo e na base as duas tabelas emparelhadas (lado a lado) para comparação, formandos os 3 uma figura só.
 "
@@ -34,4 +32,5 @@ Meu trabalho de conclusão de curso
 - [x] Adicionar referencias para cada uma das práticas no capítulo de resultados.
 - [x] Dar uma olhada no paper de Klissiomara para melhorar as ameaças a validade.
 - [X] Adicionar supercategorias
+- [x] Adicionar tabela T1
 
