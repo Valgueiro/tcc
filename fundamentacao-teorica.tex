@@ -1,7 +1,7 @@
 \chapter{Fundamentação Teórica}
 
 Este capítulo tem como objetivo apresentar conceitos importantes para a
-construção desta pesquisa e entendimento dos resultados obtidos. Assim, o capítulo abordará conceitos de metodologias ágeis, DevOps, técnicas de integração, entrega e \emph{deployment} contínuos e práticas relacionadas. Por fim, serão abordados alguns dos trabalhos relacionados a este presentes na literatura.
+construção desta pesquisa e entendimento dos resultados obtidos. Assim, o capítulo abordará conceitos de metodologias ágeis, DevOps, técnicas de integração, entrega e \emph{deployment} contínuos e práticas relacionadas. Por fim, serão abordados alguns dos trabalhos relacionados a este.
 
 
 \section{Metodologias Ágeis}
@@ -30,7 +30,7 @@ principalmente relacionados à confiabilidade dos processos e à
 qualidade do software.
 \end{quotation}
 
-É notório que a antecipação total de requisitos, como propunha o modelo de Cascata antigo, era a fórmula perfeita para a falha do projeto, como comenta \cite{agileSoftwareDevelopment}. Principalmente em ambientes de desenvolvimento de software, a metodologia mais interessante deve se basear em entregas parciais rápidas, com o objetivo de encontrar erros em fases iniciais e gerar um produto final mais de acordo com a expectativa do cliente. A ideia, como comenta o artigo, é reduzir o custo de mudanças durante o todo o desenvolvimento do projeto. As metodologias ágeis surgiram então com o objetivo de suprir essas necessidades.
+É notório que a antecipação total de requisitos, como propunha o modelo Cascata antigo, era a fórmula perfeita para a falha do projeto, como comenta \cite{agileSoftwareDevelopment}. Principalmente em ambientes de desenvolvimento de software, a metodologia mais interessante deve se basear em entregas parciais rápidas, com o objetivo de encontrar erros em fases iniciais e gerar um produto final mais de acordo com a expectativa do cliente. A ideia, como comenta o artigo, é reduzir o custo de mudanças durante o todo o desenvolvimento do projeto. As metodologias ágeis surgiram então com o objetivo de suprir essas necessidades.
 
 No geral, é possível perceber que as metodologias ágeis conseguiram encantar as empresas de desenvolvimento de software principalmente por dar a habilidade de gerenciar mudanças de prioridades, ajudar no alinhamento entre as equipes de mercado e de tecnologia e aumentar a velocidade de entregas, de acordo com \cite{stateAgileReport2020}. Pesquisas como esta demonstram o sucesso que esse novo paradigma obteve no contexto de produção de aplicações de T.I. 
 
@@ -43,7 +43,7 @@ Uma das metodologias ágeis que apresenta uma grande quantidade de usuários é 
 \includegraphics[width=\textwidth]{scrum.png}
 \end{center}
 \caption[O processo SCRUM]{
-    O processo SCRUM
+    O processo SCRUM. Fonte \cite{fotoScrum}
 }\label{scrum}
 \end{figure}
 
@@ -84,7 +84,7 @@ Para garantir que o \emph{trunk based development} funcione como esperado, deve-
 
 Outra prática relacionada a técnica de integração contínua é o chamado \emph{developer awareness} \cite{awa}, que prega a quebra de silos entre os desenvolvedores e processos de \emph{release}, o status dos ambientes e informações gerais da infraestrutura do sistema que está sendo desenvolvido.
 
-\subsection{Entrega e \emph{Deployment} Contínuo}
+\subsection{Entrega e \emph{Deployment} Contínuos}
 
 A técnica de \emph{Continuous Delivery} (entrega contínua ou CD) define que o software tem que estar a qualquer momento pronto para ser enviado para produção \cite{fowlerCD}. Para que a técnica de entrega contínua funcione como o esperado, é necessário principalmente que o software esteja pronto para \emph{deploy} durante todo o ciclo de vida e que o time sempre priorize deixar o código pronto para produção ao invés de priorizar novas funcionalidades.
 
@@ -99,7 +99,7 @@ Depois da entrega de uma nova versão, \emph{health checks} \cite{devopsBook} s�
 Para garantir ainda mais uma colaboração maior entre desenvolvedores e o time de operações, surgiu a prática de \emph{developer on call} \cite{devAndDeploymentFB}. Esta sugere que o desenvolvedor responsável pela funcionalidade recém lançada fique disponível por tempo extra após o lançamento em produção. Caso haja algum erro, ele será a pessoa mais propícia a resolvê-lo o mais rápido possível.
 
 \subsection{Entregas Parciais}
-Geralmente visto como o epítome de entrega contínua, a prática de \emph{partial rollouts} (ou entregas parciais) pode ser definida como um processo de garantia de qualidade e validação de requisitos que ocorrem em tempo de execução \cite{empiricalStudy2016}. Dentre as técnicas ligadas, podemos citar \emph{canary releases} \cite{continuousDeliveryBook}, que define o ato de enviar versões apenas para uma parte dos usuários ativos. Isto serve para testar mudanças no software primeiramente com uma parcela pequena de clientes.
+A prática de \emph{partial rollouts} (ou entregas parciais) pode ser definida como um processo de garantia de qualidade e validação de requisitos que ocorrem em tempo de execução \cite{empiricalStudy2016}. Dentre as técnicas ligadas, podemos citar \emph{canary releases} \cite{continuousDeliveryBook}, que define o ato de enviar versões apenas para uma parte dos usuários ativos. Isto serve para testar mudanças no software primeiramente com uma parcela pequena de clientes.
 
 Outra prática relacionada a técnica é a de Testes A/B \cite{testsAB}. Ela se baseia no teste concorrente de duas ou mais versões rodando paralelamente, que se diferem em um ponto isolado do sistema. A ideia é avaliar através de medidas estatísticas de uso e performance do sistema quais das versões é a mais pertinente aos requisitos do software. O teste pode mostrar desde versões que representam um tempo de resposta mais rápido para o usuário, até o lugar que um botão deve aparecer para vender mais produtos.
 
@@ -112,10 +112,10 @@ A técnica de \emph{code review} \cite{codeReview} consiste em uma inspeção ma
 
 \section{Trabalhos Relacionados}
 
-Há vários trabalhos relacionados a benefícios e barreiras que existem na adoção de integração contínua em contextos variados. É possível perceber que no geral os desenvolvedores gostam de utilizar CI por garantir um desenvolvimento de uma forma mais segura e confiante \cite{googleCi} e por se sentirem mais produtivos \cite{hilton2016}. É possível perceber também que os desenvolvedores ainda acham que as ferramentas de CI são complicadas e difíceis de configurar \cite{hilton2016}. 
+Há vários trabalhos relacionados a benefícios e barreiras que existem na adoção de integração contínua em contextos variados. É possível perceber que no geral os desenvolvedores gostam de utilizar CI por garantir um desenvolvimento de uma forma mais segura e confiável \cite{googleCi} e por se sentirem mais produtivos \cite{hilton2016}. É possível perceber também que os desenvolvedores ainda acham que as ferramentas de CI são complicadas e difíceis de configurar \cite{hilton2016}. 
 
-É interessante levantar ainda no contexto de integração contínua que não utilizar as ferramentas voltadas para esta técnica leva a práticas não saudáveis de desenvolvimento \cite{citheater2019}. Outro estudo encontrou que a utilização da técnica apresenta um \emph{trade-off} entre velocidade e certeza no que diz respeito a garantia de qualidade do software \cite{hilton2016}.
+É interessante levantar ainda no contexto de integração contínua que utilizar as ferramentas voltadas para esta técnica sem adequar a cultura de desenvolvimento para tal leva a práticas não saudáveis de desenvolvimento, tais como \emph{builds} que levam muito tempo para concluir ou permanecem quebrados por longos períodos de tempo  \cite{citheater2019}. Outro estudo encontrou que a utilização da técnica apresenta um \emph{trade-off} entre velocidade e certeza no que diz respeito a garantia de qualidade do software \cite{hilton2016}.
 
-Já a respeito de \emph{deployment} contínuo, foi encontrada a visão dos desenvolvedores do Facebook e de OANDA a respeito de \emph{Continuous Deployment} \cite{savor2015}. O artigo mostra que os desenvolvedores preferem \emph{deployments} mais rápidos por gerar maior qualidade de software e maior produtividade. Contudo, eles acreditam que há uma instabilidade maior e é uma metodologia inviável para sistemas críticos.
+Já a respeito de \emph{deployment} contínuo, foi encontrada a visão dos desenvolvedores do Facebook e de OANDA a respeito desta técnica \cite{savor2015}. O artigo mostra que os desenvolvedores preferem \emph{deployments} mais rápidos por gerar maior qualidade de software e maior produtividade. Contudo, eles acreditam que há uma instabilidade maior e é uma metodologia inviável para sistemas críticos.
 
-Podemos ainda citar o artigo base deste trabalho \cite{empiricalStudy2016}, que apresenta uma pesquisa empírica a respeito dos princípios e práticas de entrega e \emph{deployment} contínuos em empresas européias e norte-americanas. Os autores encontram que umas das principais barreiras para a adoção de CD são problemas arquiteturais. Além disso, percebe-se que \emph{feature toggles} como uma implementação de técnicas de entregas parciais levam a uma complexidade de código indesejada.
+Podemos ainda citar o artigo mais relacionado e que também serve de base para este trabalho \cite{empiricalStudy2016}, que apresenta uma pesquisa empírica a respeito dos princípios e práticas de entrega e \emph{deployment} contínuos em empresas européias e norte-americanas. Os autores encontram que umas das principais barreiras para a adoção de CD são problemas arquiteturais. Além disso, percebe-se que \emph{feature toggles} como uma implementação de técnicas de entregas parciais levam a uma complexidade de código indesejada.

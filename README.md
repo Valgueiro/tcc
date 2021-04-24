@@ -6,6 +6,14 @@ Meu trabalho de conclusão de curso
 - [ ] Revisar apendice
   - [ ] Adicionar tabela T1
 - [ ] Abstract <depois do review>
+- [ ] Analisar sobre criar visualização comparativa do stairway to heaven comparativo sugerida por klissiomara. "Acho que não tem muito como, mas ficaria bem legal se fosse possível visualizar os 3 numa mesma figura, a comparação seria mais fácil: a escada, a tabela deles (só com os 11 primeiros dele para ficar padrão com a sua) e a sua (com os seus 11).  Poderia, de repente colocar num apêndice uma figura com os 3 juntos, a escada no topo e na base as duas tabelas emparelhadas (lado a lado) para comparação, formandos os 3 uma figura só.
+"
+
+## Confirmar com Paulo
+- Termo aluno ou pesquisador?
+- Perguntar sobre colocar stairway to heaven no resumo. Klissiomara sentiu falta, mas não sei se seria válido colocar ou até como devo colocar isso lá, pensando que foi uma coisa criada pelo artigo base.
+
+"senti falta resultado (summary) relativo ao stair of heaven....ele é um dos resultados principais. Aqui, como não dá (e nem se deve) tdos os resultcolocar ados, listar os que são principais"
 
 
 ## Done

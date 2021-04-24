@@ -17,9 +17,9 @@ O presente trabalho procura entender sobre a utilização das práticas de CI/CD
 
 
 \section{O artigo base}
-Com o objetivo de entender um pouco mais sobre o estado das práticas de CI/CD no contexto de Recife, nos baseamos no estudo \cite{empiricalStudy2016}, que busca entender como as práticas geralmente associadas a \emph{Continuous Deployment} acharam o seu caminho nas indústrias européia e norte-americana. Para tal, foi utilizado um método misto de estudo empírico baseado em um pré-estudo na literatura, entrevistas com 20 participantes e um \emph{survey} que recebeu 187 respostas. A ideia era questionar até que ponto o conhecimento na area estava dominado por peculiaridades de um pequeno grupo de grandes empresas, como Facebook e Google. Aprender mais sobre as dificuldades que outras empresas não globais sofrem no processo de adoção de práticas de CI/CD pode gerar mais estudos a respeito de como solucionar tais problemas, assim como mostrar possíveis oportunidades de melhoria e revisão dos processos utilizados.
+Com o objetivo de entender um pouco mais sobre o estado da prática de CI/CD no contexto de Recife, nos baseamos no estudo \cite{empiricalStudy2016}, que busca entender como as práticas geralmente associadas a \emph{Continuous Deployment} acharam o seu caminho nas indústrias européia e norte-americana. Nesse estudo os autores utilizaram um método misto de estudo empírico baseado em um pré-estudo na literatura, entrevistas com 20 participantes e um \emph{survey} que recebeu 187 respostas. A ideia era questionar até que ponto o conhecimento na area estava dominado por peculiaridades de um pequeno grupo de grandes empresas, como Facebook e Google.
 
-Durante o trabalho os autores definem a \emph{stairway to heaven} (escada para o céu, em tradução livre), presente na \figref{stairway}. Ela tem como objetivo definir um caminho de evolução das empresas para um estágio de entregas sofisticado. A escada permeia práticas de integração contínua, \emph{deployment} contínuo e entregas parciais.
+Os autores também definem a chamada \emph{stairway to heaven} (escada para o céu, em tradução livre), presente na \figref{stairway}. Ela tem como objetivo definir um caminho de evolução das empresas para um estágio de entregas sofisticado. A escada permeia práticas de integração contínua, \emph{deployment} contínuo e entregas parciais.
 
 \begin{figure}[ht]
 \begin{center}
@@ -27,17 +27,19 @@ Durante o trabalho os autores definem a \emph{stairway to heaven} (escada para o
 \end{center}
 \caption[Stairway to Heaven]{
     A escada de evolução denominada "Stairway to Heaven" proposta pelo artigo base.
-    Fonte: Schermman et al (2016)
+    Fonte: Schermman et al \cite{empiricalStudy2016}
 }\label{stairway}
 
 \end{figure}
 
 Através desta metodologia os autores descobriram que, no contexto estudado, problemas arquiteturais são geralmente uma das maiores barreiras para a adoção de CD. Não obstante, a técnica de \emph{Feature Toggles} \cite{featureToggles} como forma de realizar entregas parciais adiciona uma complexidade demasiada e não saudável ao código. Por fim eles concluem que os desenvolvedores necessitam também de um protocolo baseado em princípios que estabeleçam quando deve-se utilizar técnicas de entregas parciais, por exemplo, que funcionalidades e métricas devem ser testadas por um teste A/B \cite{testsAB}.
 
-Um trabalho que utilize uma adaptação da metodologia aplicada a uma amostra de um outro contexto pode revelar discrepâncias e semelhanças entre os dois ambientes de estudo. As discrepâncias levantariam pontos de questionamento, pesquisa e até possíveis melhorias aos ambientes envolvidos. Já as semelhanças podem assegurar que as práticas utilizadas já acharam o seu lugar na indústria e funcionam bem assim como a teoria propunha.
+Aprender mais sobre as dificuldades que outras empresas não globais sofrem no processo de adoção de práticas de CI/CD pode gerar mais estudos a respeito de como solucionar tais problemas, assim como mostrar possíveis oportunidades de melhoria e revisão dos processos utilizados. Um trabalho que utilize uma adaptação da metodologia aplicada a uma amostra de um outro contexto pode revelar ainda discrepâncias e semelhanças entre os dois ambientes de estudo. As discrepâncias levantariam pontos de questionamento, pesquisa e até possíveis melhorias aos ambientes envolvidos. Já as semelhanças podem assegurar que as práticas utilizadas já acharam o seu lugar na indústria e funcionam bem assim como a teoria propunha.
+
+Assim, a grande adoção da indústria mundial das práticas de CI/CD, aliado a falta de trabalhos a respeito no contexto recifense, além da metodologia já validada proposta pelo artigo foram as principais motivações para o desenvolvimento deste trabalho
 
 \section{Perguntas de pesquisa} 
-Assim, a grande adoção da indústria mundial das práticas de CI/CD, aliado a falta de trabalhos a respeito no contexto recifense e a excelente metodologia já validada proposta pelo artigo \cite{empiricalStudy2016} foram as principais motivações para o desenvolvimento deste trabalho. Para este as seguintes perguntas de pesquisa foram formadas:
+Com o intuito de entender como as técnicas de integração, entrega e \emph{deployment} continuos foram importadas para as empresas recifenses, as seguintes perguntas de pesquisa foram formadas:
 
 \begin{enumerate}
 \item Quais as práticas de CI/CD são utilizadas pelas empresas em Recife?
