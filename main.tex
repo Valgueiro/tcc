@@ -5,23 +5,23 @@
 
 %% Carrega a classe ufpethesis
 %% Opções: * Idiomas
-%%           pt   - português (padrão)
-%%           en   - inglês
+%%           pt   -- português (padrão)
+%%           en   -- inglês
 %%         * Tipo do Texto
-%%           bsc  - para monografias de graduação
-%%           msc  - para dissertações de mestrado (padrão)
-%%           qual - exame de qualificação doutorado
-%%           prop - proposta de tese doutorado
-%%           phd  - para teses de doutorado
+%%           bsc  -- para monografias de graduação
+%%           msc  -- para dissertações de mestrado (padrão)
+%%           qual -- exame de qualificação doutorado
+%%           prop -- proposta de tese doutorado
+%%           phd  -- para teses de doutorado
 %%         * Mídia
-%%           scr  - para versão eletrônica (PDF) / consulte o guia do usuario
+%%           scr  -- para versão eletrônica (PDF) / consulte o guia do usuario
 %%         * Estilo
-%%           classic - estilo original à la TAOCP
-%%           modern  - estilo à la CUP (padrão)
-%%           ugly    - formato da UFPE com parte pré-textual no formato ABNT
+%%           classic -- estilo original à la TAOCP
+%%           modern  -- estilo à la CUP (padrão)
+%%           ugly    -- formato da UFPE com parte pré-textual no formato ABNT
 %%         * Paginação
-%%           oneside - para impressão em face única
-%%           twoside - para impressão em frente e verso (padrão)
+%%           oneside -- para impressão em face única
+%%           twoside -- para impressão em frente e verso (padrão)
 \documentclass[bsc, oneside]{ufpethesis}
 
 %% Preâmbulo:
@@ -31,6 +31,14 @@
 \graphicspath{ {./images/} }
 \DeclareGraphicsExtensions{.png}
 \usepackage{cite}
+\usepackage[pdftex]{hyperref}
+\usepackage{xcolor}
+\hypersetup{
+    colorlinks,
+    linkcolor={red!50!black},
+    citecolor={blue!50!black},
+    urlcolor={blue!80!black}
+}
 
 %% Identificação:
 
@@ -68,7 +76,7 @@
 
 % Título da dissertação/tese
 % e.g. \title{Sobre a conjectura $P=NP$}
-\title{Pesquisa sobre práticas de CI e CD em Recife}
+\title{Pesquisa sobre práticas de Integração e Deployment contínuos em Recife}
 
 % Data da defesa
 % e.g. \date{19 de fevereiro de 2003}
@@ -79,12 +87,12 @@
 \author{Mateus Valgueiro Teixeira}
 
 % Orientador(a)
-% Opção: [f] - para orientador do sexo feminino
+% Opção: [f] -- para orientador do sexo feminino
 % e.g. \adviser[f]{Profa. Dra. Maria Santos}
 \adviser{Paulo Henrique Monteiro Borba}
 
 % Orientador(a)
-% Opção: [f] - para orientador do sexo feminino
+% Opção: [f] -- para orientador do sexo feminino
 % e.g. \coadviser{Prof. Dr. Pedro Pedreira}
 % Comente se não se aplicar
 \coadviser[f]{Klissiomara Lopes Dias}
@@ -177,7 +185,6 @@ Só sei que nada sei.
 \appendix
 
 \include{apendices/questionario-traduzido}
-\include{apendices/guia-de-entrevista}
 \include{apendices/tabela-T1}
 \include{apendices/super-categorias.tex}
 

@@ -17,7 +17,7 @@
 %%%    Keywords            = "LaTeX, Thesis, Dissertation",
 %%%    Abstract            = "LaTeX document-style for typesetting of
 %%%                           Monographs, Theses and Dissertations at the
-%%%                           Federal University of Pernambuco - Brazil"
+%%%                           Federal University of Pernambuco -- Brazil"
 %%%    SeeAlso             = "book.sty",
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 

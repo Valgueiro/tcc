@@ -4,33 +4,29 @@ Meu trabalho de conclusão de curso
 
 ## TODO list
 - [ ] Abstract <depois do review>
-- [ ] Analisar sobre criar visualização comparativa do stairway to heaven comparativo sugerida por klissiomara. "Acho que não tem muito como, mas ficaria bem legal se fosse possível visualizar os 3 numa mesma figura, a comparação seria mais fácil: a escada, a tabela deles (só com os 11 primeiros dele para ficar padrão com a sua) e a sua (com os seus 11).  Poderia, de repente colocar num apêndice uma figura com os 3 juntos, a escada no topo e na base as duas tabelas emparelhadas (lado a lado) para comparação, formandos os 3 uma figura só.
-"
+- [ ] Revisar ameaças a validade
+- [ ] Gerar link para códigos (ou adicionar no apendice?)
+- [ ] Explicar melhor integração continua.
+- [ ] Revisar gramática de todos os capitulos
+- [ ] Melhorar Conclusão
+    * porto digital tem diferenças significativas em CI/CD/stairway em relação as empresas dos outros estudos? em utilização e aspectos quantitativos? e em termos de justificativas?
 
-## Confirmar com Paulo
-- Termo aluno ou pesquisador?
-- Perguntar sobre colocar stairway to heaven no resumo. Klissiomara sentiu falta, mas não sei se seria válido colocar ou até como devo colocar isso lá, pensando que foi uma coisa criada pelo artigo base.
+    * estamos atrasado/adiantados/no mesmo patamar? dificuldades particulares nossas? precisa de mais treinamento/conhecimento das tecniacas?
 
-"senti falta resultado (summary) relativo ao stair of heaven....ele é um dos resultados principais. Aqui, como não dá (e nem se deve) tdos os resultcolocar ados, listar os que são principais"
+    * aqui, principalmente, nao pode ser so o foco quantitativo
+
+    * se eu pretendo investir em uma empresa no proto, criar uma empresa de sw, ser gerente em uma empresa dessa, o que eu posso aprender com o trabalho? que dica o trabalho me da que eu posso usar la?
+
+## Perguntar
+- Sobre retirar os capítulos de Metodologias ágeis e SCRUM 
+- Não consigo explicar a razão de algumas coisas serem ou não utilizadas pois não há códigos para tal (a grande maioria das coisas desse conjunto nao foi perguntado, foi inferido de outras respostas, ou coisas do genero).
+- Posso enviar?
+
 
 
 ## Done
-- [x] ajeitar referencias de links
-- [x] Ajeitar comentários de Klissiomara
-- [x] Pegar uma referencia sobre Grounded Theory
-- [x] Fazer imagem demonstrando a metodologia
-- [x] Detalhar sobre o caso de CAN de P4
-- [X] Resultados
-- [X] Metodologia
-- [X] Motivação
-- [x] Colocar como responde cada uma das perguntas de pesquisa na metodologia e nos resultados
-- [x] revisar comentários de paulo no pdf
-- [x] revisar o caso de falar sobre tabelas na seção de metodologia
-- [x] Conclusão e trabalhos relacionados
-- [x] Introdução
-- [x] Referencial Teórico
-- [x] Adicionar referencias para cada uma das práticas no capítulo de resultados.
-- [x] Dar uma olhada no paper de Klissiomara para melhorar as ameaças a validade.
-- [X] Adicionar supercategorias
-- [x] Adicionar tabela T1
 
+- [x] Retirar guia de entrevistas do apendice
+  - [x] atualizar nome dos apendices
+- [x] Adicionar stairway ao resumo
+- [x] Utiliza pacote hyperref do latex para linkar o pdf
