@@ -1,7 +1,7 @@
 
 \chapter{Resultados}
 
-Neste capítulo será apresentado os resultados encontrados com as entrevistas baseado no processo de análise de dados apresentada no capítulo anterior. Primeiramente será abordado como foi feita o agrupamento dos códigos gerados com as práticas. Após isso será focado o estudo do predomínio das práticas em Recife, seguido da análise de coerência do stairway to heaven. Por fim, serão apresentados princípios e práticas subjacentes que governam a adoção de CI/CD na amostra.
+Neste capítulo serão apresentados os resultados encontrados com as entrevistas baseadas no processo de análise de dados apresentada no capítulo anterior. Primeiramente será abordado como foi feito o agrupamento dos códigos gerados com as práticas. Após isso, será focado o estudo do predomínio das práticas em Recife, seguido da análise de coerência do \emph{Stairway to Heaven}. Por fim, serão apresentados princípios e práticas subjacentes que governam a adoção de CI/CD na amostra.
 
 
 \section{Estudo de Predomínio das Práticas}
@@ -29,7 +29,7 @@ Com o intuito de responder a pergunta de pesquisa RQ1 -- \emph{Quais as prática
 
 Com a \tabref{tabela_t3} é possível perceber que \emph{Developer awareness [AWA]} foi a prática mais encontrada em toda a amostra, sendo totalmente utilizada pela grande maioria dos entrevistados; apenas um deles utiliza parcialmente. Logo após, pode-se encontrar as práticas de \emph{Health Check} [HC] e \emph{Deployment Pipeline} [PIP] na segunda e na terceira colocação, respectivamente. No geral, também pode-se inferir que as técnicas de \emph{Partial Rollouts} são ainda muito pouco utilizadas, com as 3 práticas do grupo entre as quatro últimas colocadas. Vale a pena citar que nenhum dos entrevistados utiliza, mesmo que precariamente, a técnica de Testes A/B [AB].
 
-Quando comparamos a \tabref{tabela_t3} com a Tabela 1 do artigo base (\figref{tabela_1_artigo_base}), podemos perceber que há diferenças de posição entre práticas, mas que não há mudanças exorbitantes. Com a ajuda da \tabref{diferenca_entre_posicoes_fig}, é possível perceber que há uma diferença de no máximo 2 posições na ordem de predomínio, ao comparar os resultados obtidos neste trabalho com os do artigo base. É possível perceber que as práticas de AWA, TBD, DAR e FT tiveram mudanças de 2 posições, enquanto HC, PIP, CAN e AB tiveram apenas diferença de 1 unidade de posição. Apenas \emph{developer on call} permaneceu no mesmo local dentro das duas amostras. Por fim, é interessante perceber que o conjunto das três primeiras práticas é o mesmo, mas em posições trocadas no dois estudos.
+Quando comparamos a \tabref{tabela_t3} com a Tabela 1 do artigo base (\figref{tabela_1_artigo_base}), podemos perceber que há diferenças de posição entre práticas, mas que não há mudanças exorbitantes. Com a ajuda da \tabref{diferenca_entre_posicoes_fig}, é possível perceber que há uma diferença de no máximo 2 posições na ordem de predomínio, ao comparar os resultados obtidos neste trabalho com os do artigo base. É possível perceber que as práticas de AWA, TBD, DAR e FT tiveram mudanças de 2 posições, enquanto HC, PIP, CAN e AB tiveram apenas diferença de 1 unidade de posição. Apenas \emph{developer on call} permaneceu no mesmo local dentro das duas amostras. Por fim, é interessante perceber que o conjunto das três primeiras práticas é o mesmo, mas em posições trocadas nos dois estudos.
 
 \begin{table}[ht]
 \begin{center}
@@ -53,13 +53,13 @@ Com o objetivo de responder a pergunta de pesquisa RQ2 -- \emph{O cenário de CI
 }\label{tabela_t2}
 \end{table}
 
-Com a \tabref{tabela_t2} é possível perceber que a amostra deste estudo, assim como a amostra do estudo original, não segue a evolução proposta pelos autores do artigo base. Isso fica claro quando percebe-se que não há, em nenhum dos entrevistados, uma relação clara entre a coloração da coluna com a sua anterior. É possível notar também que há uma lacuna nas duas primeiras práticas, seguido de uma grande utilização da terceira, confirmando a tese de que a \emph{Stairway to Heaven} não foi identificada na amostra. O mais próximo dos participantes é P5, mas ainda há nele a falta do pilar TBD do primeiro degrau escada. É interessante destacar que na amostra do próprio artigo base também não foi possível identificar a escada de evolução, como é possível visualizar na \figref{tabela_1_artigo_base}.
+Com a \tabref{tabela_t2} é possível perceber que a amostra deste estudo, assim como a amostra do estudo original, não segue a evolução proposta pelos autores do artigo base. Isso fica claro quando percebe-se que não há, em nenhum dos entrevistados, uma relação clara entre a coloração da coluna com a sua anterior. É possível notar também que há uma lacuna nas duas primeiras práticas, seguido de uma grande utilização da terceira, confirmando a tese de que a \emph{Stairway to Heaven} não foi identificada na amostra. O mais próximo dos participantes é P5, mas ainda há nele a falta do pilar TBD do primeiro degrau da escada. É interessante destacar que na amostra do próprio artigo base também não foi possível identificar a escada de evolução, como é possível visualizar na \figref{tabela_1_artigo_base}.
 
 \section{Análise das Práticas}
 
 Nesta seção será abordado, para cada uma das práticas, as principais curiosidades encontradas na amostra. Esta tem como objetivo responder a pergunta RQ3: \emph{Quais são os princípios e práticas subjacentes que governam a adoção de CI/CD na indústria?} As seguintes subseções agrupam as práticas emergentes através das práticas gerais definidas no \emph{Stairway to Heaven}, inclusive seguindo a ordem deste, conforme explicado no Capítulo 4, Seção 4.4.
 
-Para poder definir padrões encontrados na amostra o autor, após a fase de agrupamento semântico, juntou todos os códigos e super categorias ligadas a cada uma das práticas baseando-se principalmente na nota de utilização. Com a leitura e reflexão deste conjunto, o autor procurou por princípios que governam a adoção ou não de de cada prática. Foi feito também um estudo comparativo com os resultados obtidos pelo artigo base para analisar discrepâncias e congruências entre os dois contextos de estudo.
+Para poder definir padrões encontrados na amostra, o autor, após a fase de agrupamento semântico, juntou todos os códigos e super categorias ligadas a cada uma das práticas, baseando-se principalmente na nota de utilização. Com a leitura e reflexão deste conjunto, o autor procurou por princípios que governam a adoção ou não de cada prática. Foi feito também um estudo comparativo com os resultados obtidos pelo artigo base para analisar discrepâncias e congruências entre os dois contextos de estudo.
 
 \subsection{Integração Contínua}
 
@@ -69,7 +69,7 @@ Nesta subseção, serão abordadas a seguir cada uma das práticas ligadas ao pr
 
 
 \subsubsection{Trunk Based Development [TBD]}
-Na amostra é possível perceber que a técnica de \emph{Trunk Based Development} [TBD] não é tão amplamente adotada, visto que apenas 4 entrevistados utilizam ao menos parcialmente. Destes, 2 comentam que entregam novas versões aos clientes baseados em novas funcionalidades, e não em \emph{sprints}. Já entre os que não utilizam, 5 integram o código apenas no final da \emph{sprint}. Deste grupo, 2 utilizam a metodologia \emph{Git Flow} \cite{gitFlow}, que define uma maneira de manusear várias branches ao mesmo tempo de modo que os desenvolvedores deparem com o mínimo de conflitos possível e que software seja entregue em versões bem definidas.
+Na amostra é possível perceber que a técnica de \emph{Trunk Based Development} [TBD] não é tão amplamente adotada, visto que apenas 4 entrevistados utilizam ao menos parcialmente. Destes, 2 comentam que entregam novas versões aos clientes baseados em novas funcionalidades, e não em \emph{sprints}. Já entre os que não utilizam, 5 integram o código apenas no final da \emph{sprint}. Deste grupo, 2 utilizam a metodologia \emph{Git Flow} \cite{gitFlow}, que define uma maneira de manusear várias branches ao mesmo tempo de modo que os desenvolvedores deparem-se com o mínimo de conflitos possível e que software seja entregue em versões bem definidas.
 
 \subsubsection{Feature Toggles [FT]}
 
@@ -78,7 +78,7 @@ No estudo foi possível perceber que, na amostra, a prática de \emph{Feature To
 Entre o grupo dos que não utilizavam, 7 só enviam código novo para produção quando a funcionalidade está concluída. Deste grupo, 2 comentaram que fazem uso de conceito de épicos, onde uma história de usuário se prolonga por mais do que apenas uma sprint. É também interessante notar que P3 está em vias de utilizar esta técnica para reduzir conflitos de \emph{merge} e \emph{rebase} devido ao grande número de desenvolvedores em seu time, como podemos ver na citação:
 
 \begin{quotation}[]{P3 -- Web -- CORP}
-    ``O meu time tem 23 [pessoas]. [...] a gente tá trabalhando em funcionalidades muito distintas, então às vezes acontece de termos um paralelismo de branches muito grande. [...] é muito complicado `mergear' e fazer rebase de tudo. Realmente dá muitos conflito''
+    ``O meu time tem 23 [pessoas]. [...] a gente tá trabalhando em funcionalidades muito distintas, então às vezes acontece de termos um paralelismo de branches muito grande. [...] é muito complicado `mergear' e fazer \emph{rebase} de tudo. Realmente dá muitos conflito''
 \end{quotation}
 
 
@@ -99,7 +99,7 @@ Sobre a prática de \emph{Health Checks} [HC], é possível perceber que, apesar
 
 Na amostra é possível perceber que a técnica de \emph{Developer on Call} [DOC] é mais adotada de forma implícita do que de fato definida -- 3 entrevistados estão em times que funcionam desta forma. Contudo, 5 pessoas do grupo não utilizam esta prática: alguns comentaram que a confiança nos testes automáticos faz com que não utilizem a prática, enquanto outro comentou que a prática é inclusive mal vista pela empresa.
 
-Uma dicotomia interessante foi encontrada entre os resultados da amostra deste trabalho e o do artigo base. Este último comenta que a prática já esta sendo largamente aceita nas organizações atualmente, e inclusive um dos entrevistados comenta que essa responsabilidade de ficar até mais tarde para resolver problemas leva os desenvolvedores a escrever e testar seus códigos mais veemente. Tal argumentação tem como base a seguinte citação retirada do artigo e traduzida:
+Uma dicotomia interessante foi encontrada entre os resultados da amostra deste trabalho e o do artigo base. Este último comenta que a prática já está sendo largamente aceita nas organizações atualmente, e inclusive um dos entrevistados comenta que essa responsabilidade de ficar até mais tarde para resolver problemas leva os desenvolvedores a escrever e testar seus códigos mais veemente. Tal argumentação tem como base a seguinte citação retirada do artigo e traduzida:
 
 \begin{quotation}[]{P14 (do artigo base) -- Web -- CORP}
     ``Se você não tem testes suficientes e faz deploy de um código ruim isso vai se voltar contra você pois você estará de plantão e terá que dar suporte a isto.''
@@ -121,7 +121,7 @@ Em relação à prática de \emph{Deployment Pipeline} [PIP] é possível inferi
  
 \subsection{Entregas Parciais}
 
-Nesta subseção, serão abordadas as práticas ligadas ao processo de Entregas Parciais, como explicado no Capítulo 2: \emph{Canary Releases} [CAN] \cite{continuousDeliveryBook}, \emph{Dark Launches} [DAR] \cite{devAndDeploymentFB} e Testes A/B [AB] \cite{testsAB}. Na amostra foi possível perceber que todas as técnicas são muito pouco utilizadas: todas estão entre as 4 últimas colocações. É valido também notar que as 3 mantiveram a mesma ordem de utilização do processo do artigo base \cite{empiricalStudy2016}.
+Nesta subseção, serão abordadas as práticas ligadas ao processo de Entregas Parciais, como explicado no Capítulo 2: \emph{Canary Releases} [CAN] \cite{continuousDeliveryBook}, \emph{Dark Launches} [DAR] \cite{devAndDeploymentFB} e Testes A/B [AB] \cite{testsAB}. Na amostra foi possível perceber que todas as técnicas são muito pouco utilizadas: todas estão entre as 4 últimas colocações. É válido também notar que as 3 mantiveram a mesma ordem de utilização do processo do artigo base \cite{empiricalStudy2016}.
 
 \subsubsection{Canary Releases [CAN]}
 
@@ -152,7 +152,7 @@ A prática de Testes A/B [AB] não foi identificada em nenhum dos participantes.
     ``O sistema da gente -- apesar de lidar com uma massa de dados muito grande -- não têm tantos usuários, então não faz muito sentido [utilizar testes A/B]....''
 \end{quotation}
 
-Outro motivo importante foi levantado por P8, que comenta que aparentemente não existe na empresa o interesse em investir nesta prática. P3 comenta ainda que o time está mais focado em entregar novas funcionalidades, pois a demanda por parte do cliente está muito grande.
+Outro motivo importante foi levantado por P8, que comenta que aparentemente não existe na empresa o interesse em investir nessa prática. P3 comenta ainda que o time está mais focado em entregar novas funcionalidades, pois a demanda por parte do cliente é muito grande.
 
 \section{Descobertas adicionais}
 
@@ -166,7 +166,7 @@ A prática de \emph{Code Review} \cite{codeReview} é bem vista pela maioria dos
     ``... a partir do momento que o sistema vai crescendo, o próprio desenvolvedor não tem a noção de que aquela sua mudança não é a melhor forma de fazer e que pode quebrar outras partes do sistema...''
 \end{quotation}
 
-Ainda na amostra, 3 entrevistados acreditam que a prática funciona principalmente para troca de conhecimento. Sobre isso, a entrevistada P10 comenta que agrega muito valor para ela como novata no time, mas acha que adiciona um tempo desnecessário na entrega de funcionalidades por pessoas mais experiente, visto que -- para ela -- a técnica não faria sentido neste caso.
+Ainda na amostra, 3 entrevistados acreditam que a prática funciona principalmente para troca de conhecimento. Sobre isso, a entrevistada P10 comenta que agrega muito valor para ela como novata no time, mas acha que adiciona um tempo desnecessário na entrega de funcionalidades por pessoas mais experientes, visto que -- para ela -- a técnica não faria sentido neste caso.
 
 Outro ponto importante foi a distinção entre dois relatos a respeito do engajamento do time com a prática. Enquanto P3 comenta que a equipe dela é bem aberta ao debate e está engajada com o processo, P7 fala que o processo funciona ``mais ou menos'', dependendo do humor dos revisores.
 
@@ -186,4 +186,4 @@ Mesmo com a metodologia definida e seguida utilizando métodos conhecidos pela c
 
 É importante salientar também que os códigos gerados durante o processo de codificação das entrevistas sofreram um certo enviesamento visto que este trabalho é uma replicação de um estudo, então o autor tinha em mente que assuntos estavam sendo procurados na fala durante o levantamento de códigos. 
 
-Outra ameça que deve ser levada em conta é o processo de \emph{coding} realizado. Ele foi feito baseando-se no áudio das entrevistas, e não nos texto transcritos, como geralmente é feito \cite{groundedTheory}. Isso pode tornar os códigos enviesados ou até mesmo significar a falta de códigos importantes que poderiam ter sido levantados pelo processo original.
+Outra ameaça que deve ser levada em conta é o processo de \emph{coding} realizado. Ele foi feito baseando-se no áudio das entrevistas, e não nos textos transcritos, como geralmente é feito \cite{groundedTheory}. Isso pode tornar os códigos enviesados ou até mesmo significar a falta de códigos importantes que poderiam ter sido levantados pelo processo original.

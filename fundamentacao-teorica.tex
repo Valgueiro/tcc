@@ -82,7 +82,7 @@ Algumas práticas foram definidas dentro da técnica para definir processos chav
 
 Para garantir que o \emph{trunk based development} funcione como esperado, deve-se ter uma ferramenta que possibilite o chaveamento de partes de código que ainda não foram finalizadas. A implementação comum desta técnica é \emph{feature toggle} [FT] \cite{featureToggles}. A técnica define, através de condicionais adicionadas no código fonte, que blocos devem ser executados ou ignorados no ambiente de produção.
 
-Outra prática relacionada a técnica de integração contínua é o chamado \emph{developer awareness} [AWA] \cite{awa}, que prega a quebra de silos entre os desenvolvedores e processos de \emph{release}, o status dos ambientes e informações gerais da infraestrutura do sistema que está sendo desenvolvido.
+Outra prática relacionada a técnica de integração contínua é o chamado \emph{developer awareness} [AWA] \cite{awa}, que prega a quebra de silos entre os desenvolvedores e processos de \emph{release}, o status dos ambientes e informações gerais da infraestrutura do sistema que está sendo desenvolvido. A ideia é não depender de um time específico de fora para cuidar de questões arquiteturais e do processo de entrega, mas sim difundir o conhecimento entre todos os envolvidos no desenvolvimento. Este é um dos conceitos recomendados na cultura \emph{DevOps} comentada anteriormente.
 
 \subsection{Entrega e \emph{Deployment} Contínuos}
 
@@ -99,6 +99,7 @@ Depois da entrega de uma nova versão, \emph{health checks} [HC] \cite{devopsBoo
 Para garantir ainda mais uma colaboração maior entre desenvolvedores e o time de operações, surgiu a prática de \emph{developer on call} [DOC] \cite{devAndDeploymentFB}. Esta sugere que o desenvolvedor responsável pela funcionalidade recém lançada fique disponível por tempo extra após o lançamento em produção. Caso haja algum erro, ele será a pessoa mais propícia a resolvê-lo o mais rápido possível.
 
 \subsection{Entregas Parciais}
+
 A prática de \emph{partial rollouts} (ou entregas parciais) pode ser definida como um processo de garantia de qualidade e validação de requisitos que ocorrem em tempo de execução \cite{empiricalStudy2016}. Dentre as técnicas ligadas, podemos citar \emph{canary releases} [CAN] \cite{continuousDeliveryBook}, que define o ato de enviar versões apenas para uma parte dos usuários ativos. Isto serve para testar mudanças no software primeiramente com uma parcela pequena de clientes.
 
 Outra prática relacionada a técnica é a de Testes A/B [AB] \cite{testsAB}. Ela se baseia no teste concorrente de duas ou mais versões rodando paralelamente, que se diferem em um ponto isolado do sistema. A ideia é avaliar através de medidas estatísticas de uso e performance do sistema quais das versões é a mais pertinente aos requisitos do software. O teste pode mostrar desde versões que representam um tempo de resposta mais rápido para o usuário, até o lugar que um botão deve aparecer para vender mais produtos.
