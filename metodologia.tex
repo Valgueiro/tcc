@@ -1,7 +1,7 @@
 
 \section{Metodologia}
 
-Para responder as perguntas introduzidas na seção anterior, foi realizada uma pesquisa qualitativa através de entrevistas semi-estruturadas utilizando como base o roteiro desenvolvido pelo artigo base \cite{empiricalStudy2016}. A primeira seção abordará uma visão geral sobre os primeiros passos da pesquisa.  Já a segunda seção discorre sobre como as entrevistas foram conduzidas. Na terceira, encontra-se todo o processo utilizado para a análise dos dados obtidos na entrevista. Por último, a quarta seção mostra informações a respeito dos participantes da pesquisa.
+Para responder as perguntas introduzidas na seção anterior, foi realizada uma pesquisa qualitativa através de entrevistas semi-estruturadas utilizando como ponto de partida o roteiro desenvolvido pelo artigo base \cite{empiricalStudy2016}. A primeira seção abordará uma visão geral sobre os primeiros passos da pesquisa.  Já a segunda seção discorre sobre como as entrevistas foram conduzidas. Na terceira, encontra-se todo o processo utilizado para a análise dos dados obtidos na entrevista. Por último, a quarta seção mostra informações a respeito dos participantes da pesquisa.
 
 
 \subsection{Pré-estudo}
@@ -10,7 +10,8 @@ Com o objetivo de entender melhor sobre como as práticas de CI/CD migraram para
 
 Após a discussão, os pesquisadores acessaram o apêndice do trabalho para obter o guia de entrevista utilizado. Como forma de manter a consistência, foi utilizado o mesmo guia de entrevistas, assim como as mesmas definições utilizadas pelos autores. No início foi montado um arquivo com a definição de cada um dos termos envolvidos em língua portuguesa para ser utilizado como consulta caso haja alguma dúvida de definição de tópicos entre os entrevistadores.
 
-Após isso, o guia de entrevistas do estudo base também foi traduzido para português e utilizado durante as entrevistas. Um ponto importante a respeito da tradução é o fato de que alguns termos ainda foram mantidos na língua inglesa devido ao fato de serem conhecidos mundialmente nesta língua. Por exemplo, \emph{Continuous Integration}, \emph{Canary Releases} e \emph{Health check}. O questionário utilizado está presente no \hyperlink{questionario}{apêndice A} deste trabalho em sua versão traduzida.
+Após isso, o guia de entrevistas do estudo base também foi traduzido para português e utilizado durante as entrevistas \footnote{O guia de entrevistas traduzido está disponível em \url{http://bit.ly/ArtigoQuestoesEntrevista}}. Um ponto importante a respeito da tradução é o fato de que alguns termos ainda foram mantidos na língua inglesa devido ao fato de serem conhecidos mundialmente nesta língua. Por exemplo, \emph{Continuous Integration}, \emph{Canary Releases} e \emph{Health check}.
+
 
 \subsection{Estrutura da Entrevista}
 
@@ -22,7 +23,7 @@ A entrevista é dividida em 5 sessões:
 \item Processo de entrega no geral
 \item Papéis/Responsabilidades
 \item Garantia da Qualidade (Quality Assurance)
-\item Gerenciamentos de Problemas
+\item Gerenciamento de Problemas
 \item Avaliação de Entrega
 \end{enumerate}
 
@@ -35,7 +36,7 @@ Todas as entrevistas ocorreram de forma online, através do Google Meet, e acont
 No total foram entrevistados 11 desenvolvedores (P1 a P11) de 7 empresas diferentes sediadas em Recife. A Figura \ref{detalhamento_dos_entrevistados} mostra todos os dados demográficos obtidos de cada um dos entrevistados. Esses dados foram obtidos pelos entrevistadores no começo de cada entrevista e agregados nesta figura. O tamanho da empresa é definido pela quantidade de colaboradores: \emph{Startup} define empresas com menos de 50 trabalhadores; \emph{SME} são empresas que contém entre 50 e 500 colaboradores; e \emph{CORP} são empresas com mais de 500 colaboradores.
 
 
-Da amostra, 3 eram mulheres. Pode-se ver a distribuição dos participantes por gênero na \ref{genero}. Dentro desse grupo, 9 trabalhavam com aplicações Web, enquanto 1 trabalhava com sistemas embarcados e o último, com jogos.
+Da amostra, 3 eram mulheres. Pode-se ver a distribuição dos participantes por gênero na Figura \ref{genero}. Dentro desse grupo, 9 trabalhavam com aplicações Web, enquanto 1 trabalhava com sistemas embarcados e o último, com jogos.
 
 \begin{figure}[h]
 \centering
@@ -46,7 +47,7 @@ Da amostra, 3 eram mulheres. Pode-se ver a distribuição dos participantes por 
 \end{figure}
 
 
-A escolha dos entrevistados foi feita baseado na rede de conhecidos dos entrevistadores, com o propósito de agregar pessoas que trabalhavam em empresas de tamanhos distintos para garantir uma variedade de parâmetros envolvidos. Como é possível perceber na \ref{tamanho_empresa}, com relação a esse aspecto a amostra está bem distribuída. 
+A escolha dos entrevistados foi feita baseado na rede de conhecidos dos entrevistadores, com o propósito de agregar pessoas que trabalhavam em empresas de tamanhos distintos para garantir uma variedade de parâmetros envolvidos. Como é possível perceber na Figura \ref{tamanho_empresa}, com relação a esse aspecto a amostra está bem distribuída. 
 
 \begin{figure}
 \centering
@@ -71,27 +72,29 @@ A escolha dos entrevistados foi feita baseado na rede de conhecidos dos entrevis
 
 \subsection{Análise dos Dados}
 
-\begin{figure}[ht]
+\begin{figure*}[ht]
 \begin{center}
-\includegraphics[width=\linewidth]{metodologia_tcc.png}
+\includegraphics[scale=0.5]{metodologia_tcc.png}
 \end{center}
 \caption[Fluxograma da Metodologia]{
-    Demonstra como funcionou os processos de coleta e análise de dados.
+    Visão geral dos processos de coleta e análise de dados.
 }\label{fluxograma_metodologia}
-\end{figure}
+\end{figure*}
 
     
 A Figura \ref{fluxograma_metodologia} apresenta uma visão geral de como funcionou o processo de coleta e análise de dados. A análise foi feita apenas pelo autor deste estudo. O processo escolhido foi baseado nas fases de \emph{Coding} e \emph{Thematic Analysis} da metodologia \emph{Grounded Theory} \cite{groundedTheory}. No processo de \emph{Coding} a ideia é levantar rótulos ou tags relevantes para o texto e, tradicionalmente, é feito baseado na transcrição das entrevistas. No entanto, neste trabalho o autor gerou códigos através da escuta das entrevistas. Então, como um exemplo, a seguinte citação:
 
-\blockquote[P5]{Como somos uma equipe muito pequena, todos os desenvolvedores são meio que DEVOPS. Quando tem que tomar alguma decisão nós entramos em discussão e definimos por nós.}
+\begin{quote}
+    ``Como somos uma equipe muito pequena, todos os desenvolvedores são meio que DEVOPS. Quando tem que tomar alguma decisão nós entramos em discussão e definimos por nós.'' --- P5
+\end{quote}
 
 Gerou o código: \emph{``Todos os desenvolvedores são devops.''} -- P5\_15, onde P5 identifica o número do participante do qual a entrevista gerou o código, e o 15 define a ordem de criação deste, além de servir como identificador único.
 
 Então, após levantados todos os códigos de uma entrevista, estes foram revisados para garantir semântica e sintaxe adequadas. Alguns códigos nessa fase foram eliminados por redundância, enquanto outros foram quebrados em múltiplos. Depois, eles foram agrupados, quando compatíveis, em cada uma das 9 práticas descritas pelo artigo base e foi escolhida uma nota entre 0 a 2, representando não utiliza, utiliza parcialmente e utiliza completamente baseado nas definições do artigo base traduzidas. Por exemplo, na Figura \ref{fluxograma_metodologia} pela etapa de ``Categorização dos tópicos nas práticas''. Este processo foi então replicado para cada uma das 11 entrevistas.
 
-Ao final do processo ainda haviam 3 entrevistas que não geraram nenhum código relacionado a prática de \emph{Dark Launch}. Para estes casos, foi enviado um email diretamente para cada um dos entrevistados com a definição do artigo base da técnica e foi perguntado se o entrevistado utilizava ou não a mesma, o que gerou mais 3 códigos. Ao final, 292 códigos surgiram ao todo \footnote{A lista de todos os códigos está disponível em \url{http://bit.ly/tgMValgueiroCodigos}}.
+Ao final do processo ainda haviam 3 entrevistas que não geraram nenhum código relacionado a prática de \emph{Dark Launch}. Para estes casos, foi enviado um email diretamente para cada um dos entrevistados com a definição do artigo base da técnica e foi perguntado se o entrevistado utilizava ou não a mesma, o que gerou mais 3 códigos. Ao final, 292 códigos surgiram ao todo \footnote{A lista de todos os códigos está disponível em \url{http://bit.ly/ArtigoCodigos}}.
 
-Após a etapa de geração e revisão dos códigos, estes foram então agrupados, quando válido, na prática específica com a qual aquele código se relacionava. Este agrupamento gerou a Tabela Entrevistado-Pratica-Codigos, presente no \hyperlink{tabela1}{apêndice B} deste trabalho, que mostra uma visão geral de cada relação entre prática e entrevistado, contendo a nota dada e os códigos que justificam a nota. A nota é demonstrada pela cor presente em cada célula: branco significa não utiliza, verde claro mostra que o participante utiliza parcialmente, e verde claro, totalmente. A tabela contém 147 dos 292 códigos gerados e foi utilizada como base para a maioria das figuras geradas neste trabalho. A Figura \ref{trecho_tabela_t1} apresenta um trecho da Tabela Entrevistado-Pratica-Codigos.
+Após a etapa de geração e revisão dos códigos, estes foram então agrupados, quando válido, na prática específica com a qual aquele código se relacionava. Este agrupamento gerou a Tabela Entrevistado-Pratica-Codigos \footnote{A Tabela Entrevistado-Pratica-Codigos está disponível em \url{http://bit.ly/ArtigoTabela}}, que mostra uma visão geral de cada relação entre prática e entrevistado, contendo a nota dada e os códigos que justificam a nota. A nota é demonstrada pela cor presente em cada célula: branco significa não utiliza, verde claro mostra que o participante utiliza parcialmente, e verde claro, totalmente. A tabela contém 147 dos 292 códigos gerados e foi utilizada como base para a maioria das figuras geradas neste trabalho. A Figura \ref{trecho_tabela_t1} apresenta um trecho da Tabela Entrevistado-Pratica-Codigos.
 
 \begin{figure}[ht]
     \begin{center}
@@ -102,7 +105,8 @@ Após a etapa de geração e revisão dos códigos, estes foram então agrupados
 }\label{trecho_tabela_t1}
 \end{figure}
 
-Para identificar padrões e abstrações nos códigos agrupados na Tabela Entrevistado-Pratica-Codigos (\hyperlink{tabela1}{apêndice B}), foi feito um trabalho de agrupamento semântico, gerando por fim 17 novas super categorias através do processo de \emph{Thematic Analysis} \cite{groundedTheory}. Esse processo é ilustrado pela etapa de ``Criação de super categorias'' na Figura \ref{fluxograma_metodologia}. As super categorias tinham como objetivo agrupar códigos semelhantes ou de mesma semântica para facilitar na reflexão dos dados. Um exemplo de super categoria gerada para a prática de \emph{Trunk Based Development} [TBD] pode ser encontrado na Figura \ref{exemplo_super_categoria}. A tabela com todas as super categorias geradas pode ser encontrada no \hyperlink{super_Categorias}{Apêndice C}.
+Para identificar padrões e abstrações nos códigos agrupados na Tabela Entrevistado-Pratica-Codigos, foi feito um trabalho de agrupamento semântico, gerando por fim 17 novas super categorias\footnote{A tabela com todas as super categorias geradas pode ser encontrada em \url{http://bit.ly/ArtigoSuperCategorias}} através do processo de \emph{Thematic Analysis} \cite{groundedTheory}. Esse processo é ilustrado pela etapa de ``Criação de super categorias'' na Figura \ref{fluxograma_metodologia}. As super categorias tinham como objetivo agrupar códigos semelhantes ou de mesma semântica para facilitar na reflexão dos dados. Um exemplo de super categoria gerada para a prática de \emph{Trunk Based Development} [TBD] pode ser encontrado na Figura \ref{exemplo_super_categoria}.
+
 
 \begin{figure*}[ht]
 \begin{center}
@@ -113,6 +117,6 @@ Para identificar padrões e abstrações nos códigos agrupados na Tabela Entrev
 }\label{exemplo_super_categoria}
 \end{figure*}
 
-É importante salientar que ainda durante o processo de levantamento de códigos surgiram tópicos relevantes que não se relacionavam diretamente com as práticas descritas, mas que são perguntados pelo questionário e relevantes para o tema tratado. Surgiram então 2 novos tópicos que agregam códigos sobre as práticas de \emph{Code Review} e de testes automáticos. Para estas foram relacionados 29 códigos dos 292 já mencionados, e duas super categorias foram geradas. A tabela com todos os códigos relacionados está presente no \hyperlink{tabela1}{apêndice B} juntamente com as outras práticas.
+É importante salientar que ainda durante o processo de levantamento de códigos surgiram tópicos relevantes que não se relacionavam diretamente com as práticas descritas, mas que são perguntados pelo questionário e relevantes para o tema tratado. Surgiram então 2 novos tópicos que agregam códigos sobre as práticas de \emph{Code Review} e de testes automáticos. Para estas foram relacionados 29 códigos dos 292 já mencionados, e duas super categorias foram geradas. A tabela com todos os códigos relacionados está presente na Tabela Entrevistado-Pratica-Codigos juntamente com as outras práticas.
 
-Por fim, foram geradas algumas tabelas derivadas da Tabela Entrevistado-Pratica-Codigos, ilustrado no passo de ``Geração de resultados'' na \ref{fluxograma_metodologia}, para facilitar a visualização e análise dos dados agregados, mostrando um mapa de utilização das práticas na amostra de diferentes formas. Essas tabelas serão apresentadas na próxima seção.
+Por fim, foram geradas algumas tabelas derivadas da Tabela Entrevistado-Pratica-Codigos, ilustrado no passo de ``Geração de resultados'' na Figura \ref{fluxograma_metodologia}, para facilitar a visualização e análise dos dados agregados, mostrando um mapa de utilização das práticas na amostra de diferentes formas. Essas tabelas serão apresentadas na próxima seção.

@@ -3,58 +3,6 @@
 Este capítulo tem como objetivo apresentar conceitos importantes para a
 construção desta pesquisa e entendimento dos resultados obtidos. Assim, o capítulo abordará conceitos de DevOps \cite{devopsWiki}, técnicas de integração, entrega e \emph{deployment} contínuos \cite{fowlerCI, fowlerCD} e práticas relacionadas. Por fim, serão abordados alguns dos trabalhos relacionados a este.
 
-
-% \section{Metodologias Ágeis}
-
-% A citação a seguir retirada da dissertação \cite{experienciaComAgil} define bem como os métodos ágeis surgiram.
-
-    
-% \begin{quotation}[]{Dairton Luiz Bassi Filho}
-%     ``Durante a evolução dos processos de Engenharia de Software, a
-% indústria se baseou nos métodos tradicionais de desenvolvimento de
-% software, que definiram por muitos anos os padrões para criação de
-% software nos meios acadêmico e empresarial. Porém, percebendo que a
-% indústria apresentava um grande número de casos de fracasso, alguns
-% líderes experientes adotaram modos de trabalho que se opunham aos
-% principais conceitos das metodologias tradicionais. Aos poucos, foram
-% percebendo que suas formas de trabalho, apesar de não seguirem os
-% padrões no mercado, eram bastante eficientes. Aplicando-as em vários 
-% projetos, elas foram aprimoradas e, em alguns casos, chegaram a se
-% transformar em novas metodologias de desenvolvimento de software.
-% Essas metodologias passaram a ser chamadas de leves por não
-% utilizarem as formalidades que caracterizavam os processos tradicionais
-% e por evitarem a burocracia imposta pela utilização excessiva de
-% documentos. Com o tempo, algumas delas ganharam destaque nos
-% ambientes empresarial e acadêmico, gerando grandes debates,
-% principalmente relacionados à confiabilidade dos processos e à
-% qualidade do software.''
-% \end{quotation}
-
-% É notório que a antecipação total de requisitos, como propunha o modelo Cascata antigo, era a fórmula perfeita para a falha do projeto, como comenta \cite{agileSoftwareDevelopment}. Principalmente em ambientes de desenvolvimento de software, a metodologia mais interessante deve se basear em entregas parciais rápidas, com o objetivo de encontrar erros em fases iniciais e gerar um produto final mais de acordo com a expectativa do cliente. A ideia, como comenta o artigo, é reduzir o custo de mudanças durante o todo o desenvolvimento do projeto. As metodologias ágeis surgiram então com o objetivo de suprir essas necessidades.
-
-% No geral, é possível perceber que as metodologias ágeis conseguiram encantar as empresas de desenvolvimento de software principalmente por dar a habilidade de gerenciar mudanças de prioridades, ajudar no alinhamento entre as equipes de mercado e de tecnologia e aumentar a velocidade de entregas, de acordo com \cite{stateAgileReport2020}. Pesquisas como esta demonstram o sucesso que esse novo paradigma obteve no contexto de produção de aplicações de T.I. 
-
-% \vspace{3mm}
-% \subsection{SCRUM}
-% Uma das metodologias ágeis que apresenta uma grande quantidade de usuários é o SCRUM \cite{scrumBook}. Ele é um framework de gerenciamento de projetos que estabelece uma série de regras e cerimônias ao processo com o objetivo de garantir entregas iterativas e incrementais. Mesmo tendo sido criado em 1993 por Jeff Suntherland, a metodologia é -- entre as ágeis -- a mais utilizada atualmente: de acordo com a pesquisa da \emph{digital.ia} de 2020 \cite{stateAgileReport2020}, 58\% das equipes utilizam o framework na sua organização.
-
-% \begin{figure}[ht]
-% \begin{center}
-% \includegraphics[width=\textwidth]{scrum.png}
-% \end{center}
-% \caption[O processo SCRUM]{
-%     O processo SCRUM. Fonte \cite{fotoScrum}
-% }\label{scrum}
-% \end{figure}
-
-% A \figref{scrum} mostra o processo da metodologia. No SCRUM, os ciclos de cada projeto são denominados \emph{Sprints}, que têm duração geralmente de uma semana e são planejados durante o \emph{Planning}. Esta reunião acontece no início da \emph{Sprint} e serve para decidir o conjunto de tarefas a ser feito pela equipe durante o tempo estipulado. As tarefas são retiradas do \emph{Backlog} do produto, que contém todos os objetivos e funcionalidades já acertados com o cliente que deverão ser feitos pela equipe.
-
-% Todos os dias acontece a chamada \emph{Daily meeting}: uma reunião diária para facilitar o acompanhamento do projeto, levantar discussão a respeito das atividades desenvolvidas para disseminar conhecimento e identificar possíveis impedimentos dentro da equipe. Estas reuniões, de acordo com o método, não devem durar mais do que 15 minutos, e, por este motivo, devem ser feitas em pé.
-
-% Ao final da \emph{Sprint} acontece a reunião de \emph{Review}, onde a equipe apresenta o que foi realizado durante a última iteração e os resultados do trabalho. Após ela, acontece também a cerimônia principal para garantia de melhoria contínua: a retrospectiva. Nela, a equipe discute melhorias que podem ser implementadas no processo para atingir uma velocidade maior de entregas.
-
-% Com a pesquisa da empresa \emph{digital.ia} \cite{stateAgileReport2020} é possível perceber que, mesmo não aplicando o SCRUM definido por Suntherland, várias das cerimônias definidas na metodologia são utilizadas: 85\% dos entrevistados fazem \emph{Daily's}, 81\% utilizam a cerimônia de retrospectiva e 77\%, \emph{Planning}. 
-
 \section{DevOps}
 
 Mesmo com a flexibilidade e agilidade das metodologias ágeis tão populares nos dias atuais \cite{agileSoftwareDevelopment}, as empresas ainda estavam necessitadas de um método de reduzir o tempo entre entregas de novas features. Esta foi a principal motivação para a criação da cultura de \emph{DevOps} \cite{devopsBook}. 

@@ -3096,7 +3096,7 @@
 % \changes{v1.37}{2017/05/13}{Set \cs{normalparindent} (Matthew Fluet)}%
 %   The |amsart| package defines the \cs{normalparindent} length and
 %   initializes it to 12pt (the value of \cs{parindent} in |amsart|).  It
-%   is later used to set the \cs{listparindent} length in the |quotation|
+%   is later used to set the \cs{listparindent} length in the |quote|
 %   environment and the \cs{parindent} length in the \cs{@footnotetext}
 %   command.  We set \cs{normalparindent} to the value of \cs{parindent}
 %   as selected by |acmart| for consistent paragraph indents.
@@ -6824,7 +6824,7 @@
 % \begin{macro}{\ACM@NRadjust}
 % \changes{v1.54}{2018/06/17}{Added macro}
 % Ross Moore's macro.
-% \begin{quotation}
+% \begin{quote}
 %   Initially |\ACM@sect@format@| just passes through its |#1|
 %   argument unchanged.
 % When a sectioning macro such as |\section| occurs, the
@@ -6848,7 +6848,7 @@
 % soon, so a slight adjustment is made, via |\ACM@adddotafter|, which
 % now tests whether its argument is empty. But the coding has to allow
 % for other packages to have also patched |\@adddotafter|.
-% \end{quotation}
+% \end{quote}
 %    \begin{macrocode}
 \def\ACM@NRadjust#1{%
  \begingroup
