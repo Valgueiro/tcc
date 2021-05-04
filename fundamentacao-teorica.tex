@@ -1,7 +1,7 @@
 \chapter{Fundamentação Teórica}
 
 Este capítulo tem como objetivo apresentar conceitos importantes para a
-construção desta pesquisa e entendimento dos resultados obtidos. Assim, o capítulo abordará conceitos de DevOps \cite{devopsWiki}, técnicas de integração, entrega e \emph{deployment} contínuos \cite{fowlerCI, fowlerCD} e práticas relacionadas. Por fim, serão abordados alguns dos trabalhos relacionados a este.
+construção desta pesquisa e entendimento dos resultados obtidos. Assim, o capítulo abordará conceitos de DevOps \cite{devopsWiki}, técnicas de integração, entrega e implantação contínuos \cite{fowlerCI, fowlerCD} e práticas relacionadas. Por fim, serão abordados alguns dos trabalhos relacionados a este.
 
 
 % \section{Metodologias Ágeis}
@@ -72,7 +72,7 @@ Mesmo com a flexibilidade e agilidade das metodologias ágeis tão populares nos
 
 Para atingir o seu objetivo, de acordo com \cite{devopsWiki}, a cultura de \emph{DevOps} prega a quebra de silos entre os desenvolvedores de software (Dev) e os administradores de sistema (Ops). Melhorar a comunicação entre os dois papéis e impulsionar a automação de processos e o monitoramento em todas as fases de desenvolvimento de um software auxiliam as empresas no gerenciamento de lançamento de novas versões e no processo de garantia de qualidade.
 
-Dentre as práticas sugeridas pelo método, estão: \emph{Continuous Integration} (integração contínua);  \emph{Continuous Delivery} (entrega contínua) e \emph{Deployment}; e \emph{Partial Rollouts} (entregas parciais). Estas serão abordadas nas subseções seguintes.
+Dentre as práticas sugeridas pelo método, estão: integração contínua; entrega e implantação contínuas; e entregas parciais. Estas serão abordadas nas subseções seguintes.
 
 \subsection{Integração Contínua}
 
@@ -84,15 +84,15 @@ Para garantir que o \emph{trunk based development} funcione como esperado, deve-
 
 Outra prática relacionada a técnica de integração contínua é o chamado \emph{developer awareness} [AWA] \cite{awa}, que prega a quebra de silos entre os desenvolvedores e processos de \emph{release}, o status dos ambientes e informações gerais da infraestrutura do sistema que está sendo desenvolvido. A ideia é não depender de um time específico de fora para cuidar de questões arquiteturais e do processo de entrega, mas sim difundir o conhecimento entre todos os envolvidos no desenvolvimento. Este é um dos conceitos recomendados na cultura \emph{DevOps} comentada anteriormente.
 
-\subsection{Entrega e \emph{Deployment} Contínuos}
+\subsection{Entrega e Implantação Contínuos}
 
 A técnica de \emph{Continuous Delivery} (entrega contínua ou CD) define que o software tem que estar a qualquer momento pronto para ser enviado para produção no repositório principal \cite{fowlerCD}. Para que a técnica de entrega contínua funcione como o esperado, é necessário principalmente que o software esteja pronto para \emph{deploy} durante todo o ciclo de vida e que o time sempre priorize deixar o código pronto para produção ao invés de priorizar novas funcionalidades.
 
-Muitas vezes a técnica de \emph{Continuous Delivery} é confundida com a de \emph{Continuous Deployment}. No entanto, esta última significa que o código é automaticamente colocado em produção sempre que possível, resultando em múltiplos \emph{deployments} por dia. Com a entrega contínua, a empresa pode escolher ter um processo de entregas mais devagar, mesmo tendo o software sempre pronto para utilização. Outro ponto importante é que para se ter \emph{deployment} contínuo, é necessário ter entrega contínua.
+Muitas vezes a técnica de \emph{Continuous Delivery} é confundida com a de \emph{Continuous Deployment} (implantação contínua). No entanto, esta última significa que o código é automaticamente colocado em produção sempre que possível, resultando em múltiplos \emph{deployments} por dia. Com a entrega contínua, a empresa pode escolher ter um processo de entregas mais devagar, mesmo tendo o software sempre pronto para utilização. Outro ponto importante é que para se ter Implantação contínua, é necessário ter entrega contínua.
 
 A técnica de \emph{Continuous deployment} foi bastante difundida através do exemplo de empresas como a \emph{Flickr}, que em 2009 comentou sobre seus mais de 10 \emph{deploys} diários \cite{flickrTalk}, antes mesmo o termo \emph{DevOps} ser inventado. 
 
-Algumas práticas definem alguns dos passos necessários para utilizar a técnica de CD. Podemos citar o \emph{deployment pipeline} [PIP] \cite{devopsBook}, que define o conjunto de passos que qualquer mudança de código tem que passar para chegar em produção. Esses passos podem tratar da compilação do código, da execução de testes em diferentes ambientes, entre outras coisas e pode ser totalmente ou parcialmente automatizada. Idealmente, o conjunto de passos deve ser automatizado o máximo possível para garantir rapidez e confiabilidade dos processos envolvidos.
+Algumas práticas definem alguns dos passos necessários para utilizar a técnica de CD. Podemos citar a \emph{deployment pipeline} (pipeline de implantação) [PIP] \cite{devopsBook}, que define o conjunto de passos que qualquer mudança de código tem que passar para chegar em produção. Esses passos podem tratar da compilação do código, da execução de testes em diferentes ambientes, entre outras coisas e pode ser totalmente ou parcialmente automatizada. Idealmente, o conjunto de passos deve ser automatizado o máximo possível para garantir rapidez e confiabilidade dos processos envolvidos.
 
 Depois da entrega de uma nova versão, \emph{health checks} [HC] \cite{devopsBook} são necessários para garantir que o produto está funcionando corretamente. O sistema tem uma série de parâmetros definidos pela equipe que mostram se há algum problema no ambiente de produção, por exemplo, falha na conexão com o banco de dados, serviços inativos, certificados HTTPS expirados, entre outros. Muitas vezes o sistema tem a funcionalidade de envio de mensagens para os responsáveis quando algo de errado ocorre no ambiente.
 
@@ -117,6 +117,6 @@ Há vários trabalhos relacionados a benefícios e barreiras que existem na ado�
 
 É interessante levantar ainda no contexto de integração contínua que utilizar as ferramentas voltadas para esta técnica sem adequar a cultura de desenvolvimento para tal leva a práticas não saudáveis de desenvolvimento, tais como \emph{builds} que levam muito tempo para concluir ou permanecem quebrados por longos períodos de tempo  \cite{citheater2019}. Outro estudo encontrou que a utilização da técnica apresenta um \emph{trade-off} entre velocidade e certeza no que diz respeito a garantia de qualidade do software \cite{hilton2016}.
 
-Já a respeito de \emph{deployment} contínuo, foi encontrada a visão dos desenvolvedores do Facebook e de OANDA a respeito desta técnica \cite{savor2015}. O artigo mostra que os desenvolvedores preferem \emph{deployments} mais rápidos por gerar maior qualidade de software e maior produtividade. Contudo, eles acreditam que há uma instabilidade maior e é uma metodologia inviável para sistemas críticos.
+Já a respeito de \emph{deployment} contínuo, foi encontrada a visão dos desenvolvedores do Facebook e de OANDA\footnote{OANDA é uma pequena empresa privada que provê informações de moeda e troca de moeda como um serviço. Diariamente os serviços da empresa movimentam bilhões de dólares.} a respeito desta técnica \cite{savor2015}. O artigo mostra que os desenvolvedores preferem \emph{deployments} mais rápidos por gerar maior qualidade de software e maior produtividade. Contudo, eles acreditam que há uma instabilidade maior e é uma metodologia inviável para sistemas críticos.
 
 Podemos ainda citar o artigo mais relacionado e que também serve de base para este trabalho \cite{empiricalStudy2016}, que apresenta uma pesquisa empírica a respeito dos princípios e práticas de entrega e \emph{deployment} contínuos em empresas européias e norte-americanas. Os autores encontram que umas das principais barreiras para a adoção de CD são problemas arquiteturais. Além disso, percebe-se que \emph{feature toggles} como uma implementação de técnicas de entregas parciais levam a uma complexidade de código indesejada.
