@@ -1,0 +1,36 @@
+\section{Definições}
+
+Para este trabalho foram utilizados as mesmas definições definidas pelo artigo base. Neste capítulo serão abordados todas as definições das práticas pesquisadas no trabalho.
+
+\subsection{Integração Contínua}
+
+A técnica de \emph{Continuous Integration} (integração contínua ou CI), de acordo com \cite{fowlerCI}, têm como principal característica a integração de código no repositório compartilhado múltiplas vezes por dia. Para garantir a qualidade do software que está sendo integrado, cada \emph{merge} passa por testes automáticos pré-programados que garantem que cenários de usabilidade estão de acordo com os requisitos definidos. 
+
+Algumas práticas foram definidas dentro da técnica para definir processos chaves que produzem um CI eficiente. Entre elas, temos o \emph{trunk based development} [TBD] \cite{devAndDeploymentFB}, onde todo o time contribui para uma única \emph{branch} no repositório de versionamento, chamada usualmente de \emph{main}. Esta técnica é comumente utilizada para diminuir a quantidade de conflitos entre linhas de códigos que estão sendo concorrentemente modificadas por desenvolvedores diferentes. 
+
+Para garantir que o \emph{trunk based development} funcione como esperado, deve-se ter uma ferramenta que possibilite o chaveamento de partes de código que ainda não foram finalizadas. A implementação comum desta técnica é \emph{feature toggle} [FT] \cite{featureToggles}. A técnica define, através de condicionais adicionadas no código fonte, que blocos devem ser executados ou ignorados no ambiente de produção.
+
+Outra prática relacionada a técnica de integração contínua é o chamado \emph{developer awareness} [AWA] \cite{awa}, que prega a quebra de silos entre os desenvolvedores e processos de \emph{release}, o status dos ambientes e informações gerais da infraestrutura do sistema que está sendo desenvolvido. A ideia é não depender de um time específico de fora para cuidar de questões arquiteturais e do processo de entrega, mas sim difundir o conhecimento entre todos os envolvidos no desenvolvimento. Este é um dos conceitos recomendados na cultura \emph{DevOps} comentada anteriormente.
+
+\subsection{Entrega e Implantação Contínuos}
+
+A técnica de \emph{Continuous Delivery} (entrega contínua ou CD) define que o software tem que estar a qualquer momento pronto para ser enviado para produção no repositório principal \cite{fowlerCD}. Para que a técnica de entrega contínua funcione como o esperado, é necessário principalmente que o software esteja pronto para \emph{deploy} durante todo o ciclo de vida e que o time sempre priorize deixar o código pronto para produção ao invés de priorizar novas funcionalidades.
+
+Muitas vezes a técnica de \emph{Continuous Delivery} é confundida com a de \emph{Continuous Deployment} (implantação contínua). No entanto, esta última significa que o código é automaticamente colocado em produção sempre que possível, resultando em múltiplos \emph{deployments} por dia. Com a entrega contínua, a empresa pode escolher ter um processo de entregas mais devagar, mesmo tendo o software sempre pronto para utilização. Outro ponto importante é que para se ter Implantação contínua, é necessário ter entrega contínua.
+
+A técnica de \emph{Continuous deployment} foi bastante difundida através do exemplo de empresas como a \emph{Flickr}, que em 2009 comentou sobre seus mais de 10 \emph{deploys} diários \cite{flickrTalk}, antes mesmo o termo \emph{DevOps} ser inventado. 
+
+Algumas práticas definem alguns dos passos necessários para utilizar a técnica de CD. Podemos citar a \emph{deployment pipeline} (pipeline de implantação) [PIP] \cite{devopsBook}, que define o conjunto de passos que qualquer mudança de código tem que passar para chegar em produção. Esses passos podem tratar da compilação do código, da execução de testes em diferentes ambientes, entre outras coisas e pode ser totalmente ou parcialmente automatizada. Idealmente, o conjunto de passos deve ser automatizado o máximo possível para garantir rapidez e confiabilidade dos processos envolvidos.
+
+Depois da entrega de uma nova versão, \emph{health checks} [HC] \cite{devopsBook} são necessários para garantir que o produto está funcionando corretamente. O sistema tem uma série de parâmetros definidos pela equipe que mostram se há algum problema no ambiente de produção, por exemplo, falha na conexão com o banco de dados, serviços inativos, certificados HTTPS expirados, entre outros. Muitas vezes o sistema tem a funcionalidade de envio de mensagens para os responsáveis quando algo de errado ocorre no ambiente.
+
+Para garantir ainda mais uma colaboração maior entre desenvolvedores e o time de operações, surgiu a prática de \emph{developer on call} [DOC] \cite{devAndDeploymentFB}. Esta sugere que o desenvolvedor responsável pela funcionalidade recém lançada fique disponível por tempo extra após o lançamento em produção. Caso haja algum erro, ele será a pessoa mais propícia a resolvê-lo o mais rápido possível.
+
+\subsection{Entregas Parciais}
+
+A prática de \emph{partial rollouts} (ou entregas parciais) pode ser definida como um processo de garantia de qualidade e validação de requisitos que ocorrem em tempo de execução \cite{empiricalStudy2016}. Dentre as técnicas ligadas, podemos citar \emph{canary releases} [CAN] \cite{continuousDeliveryBook}, que define o ato de enviar versões apenas para uma parte dos usuários ativos. Isto serve para testar mudanças no software primeiramente com uma parcela pequena de clientes.
+
+Outra prática relacionada a técnica é a de Testes A/B [AB] \cite{testsAB}. Ela se baseia no teste concorrente de duas ou mais versões rodando paralelamente, que se diferem em um ponto isolado do sistema. A ideia é avaliar através de medidas estatísticas de uso e performance do sistema quais das versões é a mais pertinente aos requisitos do software. O teste pode mostrar desde versões que representam um tempo de resposta mais rápido para o usuário, até o lugar que um botão deve aparecer para vender mais produtos.
+
+A prática de \emph{dark launches} [DAR] \cite{devAndDeploymentFB} também se enquadra dentro das técnicas de entregas parciais. Ela é utilizada para testes de funcionalidades no ambiente de produção, mas sem a necessidade de habilitar a mesma para os usuários. Geralmente é utilizado para testar situações encontradas especificamente apenas em produção.  
+
