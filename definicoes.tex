@@ -3,7 +3,7 @@
 Para este trabalho foram utilizados as mesmas definições levantadas pelo artigo base.
 
 \subsection{Integração Contínua}
-A técnica de \emph{Continuous Integration} (integração contínua ou CI), de acordo com \cite{fowlerCI}, têm como principal característica a integração de código no repositório compartilhado múltiplas vezes por dia. Para garantir a qualidade do software que está sendo integrado, cada \emph{merge} passa por testes automáticos pré-programados que garantem que cenários de usabilidade estão de acordo com os requisitos definidos. 
+A técnica de integração contínua (CI), de acordo com \cite{fowlerCI}, têm como principal característica a integração de código no repositório compartilhado múltiplas vezes por dia. Para garantir a qualidade do software que está sendo integrado, cada \emph{merge} passa por testes automáticos pré-programados que garantem que cenários de usabilidade estão de acordo com os requisitos definidos. 
 
 Algumas práticas foram definidas dentro da técnica para definir processos chaves que produzem um CI eficiente. Entre elas, temos o \emph{trunk based development} [TBD] \cite{devAndDeploymentFB}, onde todo o time contribui para uma única \emph{branch} no repositório de versionamento, chamada usualmente de \emph{main}. Esta técnica é comumente utilizada para diminuir a quantidade de conflitos entre linhas de códigos que estão sendo concorrentemente modificadas por desenvolvedores diferentes. 
 
@@ -13,11 +13,11 @@ Outra prática relacionada a técnica de integração contínua é o chamado \em
 
 \subsection{Entrega e Implantação Contínuas}
 
-A técnica de \emph{Continuous Delivery} (entrega contínua ou CD) define que o software tem que estar a qualquer momento pronto para ser enviado para produção no repositório principal \cite{fowlerCD}. Para que a técnica de entrega contínua funcione como o esperado, é necessário principalmente que o software esteja pronto para \emph{deploy} durante todo o ciclo de vida e que o time sempre priorize deixar o código pronto para produção ao invés de priorizar novas funcionalidades.
+A técnica de \emph{entrega contínua} define que o software tem que estar a qualquer momento pronto para ser enviado para produção no repositório principal \cite{fowlerCD}. Para que a técnica de entrega contínua funcione como o esperado, é necessário principalmente que o software esteja pronto para \emph{implantação} durante todo o ciclo de vida e que o time sempre priorize deixar o código pronto para produção ao invés de priorizar novas funcionalidades.
 
-Muitas vezes a técnica de \emph{Continuous Delivery} é confundida com a de \emph{Continuous Deployment} (implantação contínua). No entanto, esta última significa que o código é automaticamente colocado em produção sempre que possível, resultando em múltiplos \emph{deployments} por dia. Com a entrega contínua, a empresa pode escolher ter um processo de entregas mais devagar, mesmo tendo o software sempre pronto para utilização. Outro ponto importante é que para se ter Implantação contínua, é necessário ter entrega contínua.
+Muitas vezes a técnica de \emph{entrega contínua} é confundida com a de \emph{implantação contínua}. No entanto, esta última significa que o código é automaticamente colocado em produção sempre que possível, resultando em múltiplas implantações por dia. Com a entrega contínua, a empresa pode escolher ter uma frequência de implantações mais lenta, mesmo tendo o software sempre pronto para utilização. Outro ponto importante é que para se ter implantação contínua, é necessário ter entrega contínua.
 
-A técnica de \emph{Continuous deployment} foi bastante difundida através do exemplo de empresas como a \emph{Flickr}, que em 2009 comentou sobre seus mais de 10 \emph{deploys} diários \cite{flickrTalk}, antes mesmo o termo \emph{DevOps} ser inventado. 
+A técnica de implantação contínua foi bastante difundida através do exemplo de empresas como a \emph{Flickr}, que em 2009 comentou sobre suas mais de 10 implantações diárias \cite{flickrTalk}, antes mesmo do termo \emph{DevOps} ser inventado. 
 
 Algumas práticas definem alguns dos passos necessários para utilizar a técnica de CD. Podemos citar a \emph{deployment pipeline} (pipeline de implantação) [PIP] \cite{devopsBook}, que define o conjunto de passos que qualquer mudança de código tem que passar para chegar em produção. Esses passos podem tratar da compilação do código, da execução de testes em diferentes ambientes, entre outras coisas e pode ser totalmente ou parcialmente automatizada. Idealmente, o conjunto de passos deve ser automatizado o máximo possível para garantir rapidez e confiabilidade dos processos envolvidos.
 
