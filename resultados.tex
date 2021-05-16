@@ -50,13 +50,13 @@ Com o objetivo de responder a pergunta de pesquisa PP2 -- \emph{O cenário de CI
 }\label{tabela_t2}
 \end{table}
 
-Com a Tabela \ref{tabela_t2} é possível perceber que a amostra deste estudo, assim como a amostra do estudo original, não segue a evolução proposta pelos seus autores. Isso fica claro quando percebe-se que não há, em nenhum dos entrevistados, uma relação clara entre a coloração da coluna com a sua anterior. É possível notar também que há uma lacuna nas duas primeiras práticas, seguido de uma grande utilização da terceira, reforçando que a \emph{Stairway to Heaven} não foi identificada na amostra. O mais próximo dos participantes é P5, mas ainda há nele a falta do pilar TBD do primeiro degrau da escada. É interessante destacar que na amostra do próprio estudo original também não foi possível identificar a escada de evolução, como é possível visualizar na Figura \ref{tabela_1_artigo_base}.
+Com a Tabela \ref{tabela_t2} é possível perceber que a amostra deste estudo, assim como a amostra do estudo original, não segue a evolução proposta pelos seus autores. Isso fica claro quando percebe-se que não há, em nenhum dos entrevistados, uma relação clara entre a coloração da coluna com a sua anterior. É possível notar também que há uma lacuna nas duas primeiras práticas, seguido de uma grande utilização da terceira, reforçando que a \emph{Stairway to Heaven} não foi identificada na amostra. O mais próximo dos participantes a atingir a escada definida é P5, mas ainda há nele a falta do pilar TBD do primeiro degrau da escada. É interessante destacar que na amostra do próprio estudo original também não foi possível identificar a escada de evolução.
 
 \subsection{Análise das Práticas}
 
-Nesta seção será abordado, para cada uma das práticas apresentadas na Tabela \ref{tabela_t2}, as principais curiosidades encontradas na amostra. Esta tem como objetivo responder a pergunta PP3: \emph{Quais são os princípios e práticas subjacentes que governam a adoção de CI/CD na indústria?}.
+Nesta seção será abordado, para cada uma das práticas apresentadas na Tabela \ref{tabela_t2}, as principais características encontradas na amostra. Esta tem como objetivo responder a pergunta PP3: \emph{Quais são os princípios e práticas subjacentes que governam a adoção de CI/CD na indústria?}.
 
-Para poder definir padrões encontrados na amostra, o autor, após a fase de agrupamento semântico, juntou todos os códigos e super categorias ligadas a cada uma das práticas, baseando-se principalmente na nota de utilização. Com a leitura e reflexão deste conjunto, o autor procurou por princípios que governam a adoção ou não de cada prática. Onde aplicado, ao longo desta seção, nós também destacamos como uma data prática se apresentou no estudo original, de modo a destacar as discrepâncias e congruências entre os contextos analisados por cada estudo.
+Para tanto, os códigos e super categorias criados durante a análise das entrevistas foram revisitados em busca de princípios que governam a adoção ou não de cada prática. Onde aplicado, ao longo desta seção, nós também destacamos como uma data prática se apresentou no estudo original, de modo a destacar as discrepâncias e congruências entre os contextos analisados por cada estudo.
 
 \subsubsection{Integração Contínua}
 
@@ -67,9 +67,9 @@ Na amostra é possível perceber que a técnica de \emph{Trunk Based Development
 
 \paragraph{Feature Toggles [FT]}
 
-No estudo foi possível perceber que, na amostra, a prática de \emph{Feature Toggles} [FT] \cite{featureToggles} é raramente utilizada, assim como no estudo original. Esta técnica foi encontrada apenas na equipe do participante P5, que a utiliza para esconder funcionalidades enquanto testes manuais ainda estão sendo feitos. Geralmente esta técnica é utilizada para auxiliar a integração de códigos ainda não finalizados quando a equipe utiliza técnicas como o \emph{trunk based development}, mas este não é o caso de P5. É interessante notar que este participante também foi um dos poucos que utilizava a técnica de \emph{Canary Releases} [CAN].
+No estudo foi possível perceber que, na amostra, a prática de \emph{Feature Toggles} [FT] \cite{featureToggles} é raramente utilizada, assim como no estudo original. Esta técnica foi encontrada apenas na equipe do participante P5, que a utiliza para esconder funcionalidades enquanto testes manuais ainda estão sendo feitos. Geralmente esta técnica é utilizada para auxiliar a integração de códigos ainda não finalizados quando a equipe utiliza técnicas como o \emph{trunk based development}, mas este não é o caso de P5. É interessante notar que este participante também é um dos poucos que utiliza a técnica de \emph{Canary Releases} [CAN].
 
-Entre o grupo dos que não utilizavam, 7 só enviam código novo para produção quando a funcionalidade está concluída. Deste grupo, 2 comentaram que fazem uso de conceito de épicos, onde uma história de usuário se prolonga por mais do que apenas uma sprint. É também interessante notar que P3 está em vias de utilizar esta técnica para reduzir conflitos de \emph{merge} e \emph{rebase} devido ao grande número de desenvolvedores em seu time, como podemos ver na citação:
+Entre o grupo dos que não utilizavam, 7 só enviam código novo para produção quando a funcionalidade está concluída. Deste grupo, 2 comentam que fazem uso de conceito de épicos, onde uma história de usuário se prolonga para além de apenas uma sprint. É também interessante notar que P3 está em vias de utilizar esta técnica para reduzir conflitos de \emph{merge} e \emph{rebase} devido ao grande número de desenvolvedores em seu time, como podemos ver na citação:
 
 
 \begin{quote}
@@ -174,11 +174,3 @@ Testes automáticos são, no geral, bem vistos e extremamente recomendados pela 
 \end{quote}
 
 Na amostra, 5 entrevistados acreditam que o aumento da cobertura de testes automáticos pode diminuir a quantidade de bugs em produção. Dentro desse grupo, o participante P9 comenta que isto poderia, no entanto, diminuir a velocidade de entregas do time. P5 adicionou ainda que sente que a \emph{sprint} é muito curta e não consegue tempo dentro destas para adicionar testes automáticos.
-
-\section{Ameaças a validade}
-
-Mesmo com a metodologia definida e seguida utilizando métodos conhecidos pela comunidade científica, é necessário levantar possíveis ameaças à validade dos resultados encontrados neste trabalho. Uma ameaça plausível é a quantidade relativamente pequena de entrevistas feitas.
-
-É importante salientar também que os códigos gerados durante o processo de codificação das entrevistas sofreram um certo enviesamento visto que este trabalho é uma replicação de um estudo, então o autor tinha em mente que assuntos estavam sendo procurados na fala durante o levantamento de códigos. 
-
-Outra ameaça que deve ser levada em conta é o processo de \emph{coding} realizado. Ele foi feito baseando-se no áudio das entrevistas, e não nos textos transcritos, como geralmente é feito \cite{groundedTheory}. Isso pode tornar os códigos enviesados ou até mesmo significar a falta de códigos importantes que poderiam ter sido levantados pelo processo original. É válido citar que há algumas vertentes que defendem a codificação através do áudio, por preservar a entonação e a intenção do usuário, mas ainda devem ser feitos trabalhos quantitativos na área para validação e melhor definição do processo \cite{listenCode}. 

@@ -6,9 +6,13 @@ Template: https://www.acm.org/publications/proceedings-template
 ## TODO list
 
 - [ ] acm reference format e nota de rodapé com referencias ao doi e isbn do artigo: retirar?
+- [ ] Continuous delivery e deployment sao chamados como CD no estudo original, por isso deixei dessa forma.
 
 
 
+
+
+## Done
 
 - [x] referencias
 - [x] adicionar nome de heitor
