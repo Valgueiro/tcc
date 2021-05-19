@@ -4,7 +4,7 @@ Esta seção responde às perguntas de pesquisa apresentadas na Seção 2, de ac
 
 \subsection{Estudo de Predomínio das Práticas}
 
-Com o intuito de responder a pergunta de pesquisa PP1 -- \emph{Quais as práticas de CI/CD são utilizadas pelas empresas em Recife?} foi montada a Tabela \ref{tabela_t3}, que apresenta a utilização de cada uma das práticas investigadas para cada um dos participantes, de acordo com a escala de uso apresentada na seção anterior. Assim, o verde mais escuro significa que o participante utiliza totalmente, enquanto o verde claro significa utiliza parcialmente e, por fim, o branco denota a não utilização.
+Com o intuito de responder a pergunta de pesquisa PP1 -- \emph{Quais as práticas de CI/CD são utilizadas pelas empresas em Recife?} foi montada a Tabela \ref{tabela_t3}, que apresenta a utilização de cada uma das práticas investigadas para cada um dos participantes, de acordo com a escala de uso apresentada na seção anterior (Figura \ref{trecho_tabela_t1}). Assim, o verde mais escuro significa que o participante utiliza totalmente, enquanto o verde claro significa utiliza parcialmente e, por fim, o branco denota a não utilização.
 
 \begin{table}[ht]
 \begin{center}
@@ -24,9 +24,9 @@ Com o intuito de responder a pergunta de pesquisa PP1 -- \emph{Quais as prática
 }\label{tabela_1_artigo_base}
 \end{figure}
 
-Com a Tabela \ref{tabela_t3} é possível perceber que \emph{Developer awareness [AWA]} foi a prática mais encontrada em toda a amostra, sendo totalmente utilizada pela grande maioria dos entrevistados; apenas um deles utiliza parcialmente. Logo após, pode-se encontrar as práticas de \emph{Health Check} [HC] e Pipeline de Implantação [PIP]  na segunda e na terceira colocações, respectivamente. No geral, também pode-se inferir que as técnicas de \emph{Partial Rollouts} são ainda muito pouco utilizadas, com as 3 práticas do grupo entre as quatro últimas colocadas. Vale a pena citar que nenhum dos entrevistados utiliza, mesmo que precariamente, a técnica de Testes A/B [AB].
+Com a Tabela \ref{tabela_t3} é possível perceber que \emph{Developer awareness [AWA]} foi a prática mais encontrada em toda a amostra, sendo totalmente utilizada pela grande maioria dos entrevistados; apenas um deles utiliza parcialmente. Logo após, pode-se encontrar as práticas de \emph{Health Check} [HC] --- parâmetros definidos pela equipe que mostram se há algum problema no ambiente de produção --- e Pipeline de Implantação [PIP] --- definição do conjunto de passos que qualquer mudança de código tem que passar para chegar em produção, como por exemplo compilação, testes, etc. --- na segunda e na terceira colocações, respectivamente. No geral, também pode-se inferir que as técnicas de \emph{Partial Rollouts} são ainda muito pouco utilizadas, com as 3 práticas do grupo entre as quatro últimas colocadas. Vale a pena citar que nenhum dos entrevistados utiliza, mesmo que precariamente, a técnica de Testes A/B [AB].
 
-Quando comparamos os resultados da Tabela \ref{tabela_t3} com os resultados do estudo original (Figura \ref{tabela_1_artigo_base}), podemos perceber que há diferenças de posição entre práticas, mas que não há mudanças exorbitantes. Com a ajuda da Tabela \ref{diferenca_entre_posicoes_fig}, é possível perceber que há uma diferença de no máximo 2 posições na ordem de predomínio, ao comparar os resultados obtidos neste trabalho com os do estudo original. Por exemplo, é possível perceber que as práticas de AWA, TBD, DAR e FT tiveram mudanças de 2 posições, enquanto HC, PIP, CAN e AB tiveram apenas diferença de 1 unidade de posição. Apenas \emph{developer on call} permaneceu no mesmo local dentro das duas amostras. Por fim, é interessante perceber que o conjunto das três primeiras práticas é o mesmo, mas em posições trocadas nos dois estudos.
+Quando comparamos os resultados da Tabela \ref{tabela_t3} com os resultados do estudo original (Figura \ref{tabela_1_artigo_base}), podemos perceber que há diferenças de posição entre práticas, mas que não há mudanças significativas. Com a ajuda da Tabela \ref{diferenca_entre_posicoes_fig}, é possível perceber que há uma diferença de no máximo 2 posições na ordem de predomínio, ao comparar os resultados obtidos neste trabalho com os do estudo original. Por exemplo, é possível perceber que as práticas de AWA, TBD, DAR e FT tiveram mudanças de 2 posições, enquanto HC, PIP, CAN e AB tiveram apenas diferença de 1 unidade de posição. Apenas \emph{developer on call} [DOC] --- prática onde o desenvolvedor responsável pela funcionalidade recém lançada fica disponível por tempo extra após a implantação para fornecer suporte ---permaneceu no mesmo local dentro das duas amostras. Por fim, é interessante perceber que o conjunto das três primeiras práticas é o mesmo, mas em posições trocadas nos dois estudos, sugerindo distribuição compatível de adoção de práticas entre o ecossistema de Recife e os ecossistemas do estudo original, que focava em empresas americanas e europeias.
 
 \begin{table}[ht]
 \begin{center}
@@ -50,22 +50,22 @@ Com o objetivo de responder a pergunta de pesquisa PP2 -- \emph{O cenário de CI
 }\label{tabela_t2}
 \end{table}
 
-Com a Tabela \ref{tabela_t2} é possível perceber que a amostra deste estudo, assim como a amostra do estudo original, não segue a evolução proposta pelos seus autores. Isso fica claro quando percebe-se que não há, em nenhum dos entrevistados, uma relação clara entre a coloração da coluna com a sua anterior. É possível notar também que há uma lacuna nas duas primeiras práticas, seguido de uma grande utilização da terceira, reforçando que a \emph{Stairway to Heaven} não foi identificada na amostra. O mais próximo dos participantes a atingir a escada definida é P5, mas ainda há nele a falta do pilar TBD do primeiro degrau da escada. É interessante destacar que na amostra do próprio estudo original também não foi possível identificar a escada de evolução.
+Com a Tabela \ref{tabela_t2} é possível perceber que a amostra deste estudo, assim como a amostra do estudo original, não segue a evolução proposta pelos seus autores. Isso fica claro quando percebe-se que não há, em nenhum dos entrevistados, uma relação clara entre a coloração da coluna com a sua anterior. É possível notar também que há uma lacuna nas duas primeiras práticas, seguido de uma grande utilização da terceira, reforçando que a \emph{Stairway to Heaven} não foi identificada na amostra. O mais próximo dos participantes a atingir a escada definida é P5, mas ainda há nele a falta do pilar TBD do primeiro degrau da escada. Além disso, HC e PIP aparecem com a cor verde claro, indicando que estas não foram amplamente adotadas. É interessante destacar que na amostra do próprio estudo original também não foi possível identificar a escada de evolução.
 
 \subsection{Análise das Práticas}
 
-Nesta seção será abordado, para cada uma das práticas apresentadas na Tabela \ref{tabela_t2}, as principais características encontradas na amostra. Esta tem como objetivo responder a pergunta PP3: \emph{Quais são os princípios e práticas subjacentes que governam a adoção de CI/CD na indústria?}.
+Nesta seção abordamos, para cada uma das práticas apresentadas na Tabela \ref{tabela_t2}, as principais características encontradas na amostra. Esta tem como objetivo responder a pergunta PP3: \emph{Quais são os princípios e práticas subjacentes que governam a adoção de CI/CD na indústria?}.
 
-Para tanto, os códigos e super categorias criados durante a análise das entrevistas foram revisitados em busca de princípios que governam a adoção ou não de cada prática. Onde aplicado, ao longo desta seção, nós também destacamos como uma data prática se apresentou no estudo original, de modo a destacar as discrepâncias e congruências entre os contextos analisados por cada estudo.
+Para tanto, os códigos e super categorias criados durante a análise das entrevistas foram revisitados em busca de princípios que governam a adoção ou não de cada prática. Onde aplicado, ao longo desta seção, nós também destacamos como uma dada prática se apresentou no estudo original, de modo a destacar as discrepâncias e congruências entre os contextos analisados por cada estudo.
 
 \subsubsection{Integração Contínua}
 
 Com a Tabela \ref{tabela_t3} é possível perceber que, apesar da grande disseminação a respeito de informações relacionadas à infraestrutura e manutenção de software -- ligadas à prática de \emph{Developer Awareness} \cite{awa} -- estar em primeiro lugar, as outras práticas que compõem o conjunto de integração contínua ainda não estão disseminadas na nossa amostra.
 
-\paragraph{Trunk Based Development [TBD]}
-Na amostra é possível perceber que a técnica de \emph{Trunk Based Development} [TBD] \cite{devAndDeploymentFB} não é tão amplamente adotada, visto que apenas 4 entrevistados utilizam ao menos parcialmente. Destes, 2 comentam que entregam novas versões aos clientes baseado em novas funcionalidades, e não em \emph{sprints}. Já entre os que não utilizam, 5 integram o código apenas no final da \emph{sprint}. Deste grupo, 2 utilizam a metodologia \emph{Git Flow} \cite{gitFlow}, que define uma maneira de manusear várias branches ao mesmo tempo de modo que os desenvolvedores deparem-se com o mínimo de conflitos possível e que software seja entregue em versões bem definidas.
+\paragraph*{Trunk Based Development [TBD]}
+Na amostra é possível perceber que a técnica de \emph{Trunk Based Development} [TBD] \cite{devAndDeploymentFB} não é tão amplamente adotada, visto que apenas 4 entrevistados utilizam ao menos parcialmente. Destes, 2 comentam que entregam novas versões aos clientes baseado em novas funcionalidades, e não em \emph{sprints}. Já entre os que não utilizam, 5 integram o código apenas no final da \emph{sprint}. Deste grupo, 2 utilizam a metodologia \emph{Git Flow} \cite{gitFlow}, que define uma maneira de manusear várias \emph{branches} ao mesmo tempo de modo que os desenvolvedores deparem-se com menos conflitos de \emph{merge} e que o software seja entregue em versões bem definidas.
 
-\paragraph{Feature Toggles [FT]}
+\paragraph*{Feature Toggles [FT]}
 
 No estudo foi possível perceber que, na amostra, a prática de \emph{Feature Toggles} [FT] \cite{featureToggles} é raramente utilizada, assim como no estudo original. Esta técnica foi encontrada apenas na equipe do participante P5, que a utiliza para esconder funcionalidades enquanto testes manuais ainda estão sendo feitos. Geralmente esta técnica é utilizada para auxiliar a integração de códigos ainda não finalizados quando a equipe utiliza técnicas como o \emph{trunk based development}, mas este não é o caso de P5. É interessante notar que este participante também é um dos poucos que utiliza a técnica de \emph{Canary Releases} [CAN].
 
@@ -77,7 +77,7 @@ Entre o grupo dos que não utilizavam, 7 só enviam código novo para produção
 \end{quote}
 
 
-\paragraph{Developer Awareness [AWA]}
+\paragraph*{Developer Awareness [AWA]}
 
 Na amostra é possível identificar que a prática de \emph{Developer Awareness} [AWA] é amplamente adotada nas companhias, assim como na amostra do estudo original. Em 6 entrevistas foi possível perceber que o time de desenvolvimento era o mesmo responsável pela entrega e manutenção da aplicação. Em outras 2, há um time específico de \emph{DevOps}, mas não havia grandes silos entre este e a equipe de desenvolvimento. Um caso interessante foi o de P11, que, apesar de um conhecimento espalhado dentro da equipe, há receio e insegurança por parte de alguns a respeito de questões de infraestrutura no geral.
 
@@ -86,15 +86,15 @@ Na amostra é possível identificar que a prática de \emph{Developer Awareness}
 
 É possível inferir, baseado principalmente na Tabela \ref{tabela_t3}, que as técnicas ligadas ao processo de implantação contínua estão presentes na maioria das equipes da amostra: as 3 estão nas quatro primeiras colocações. 
 
-\paragraph{Health Checks [HC]}
+\paragraph*{Health Checks [HC]}
 
 Sobre a prática de \emph{Health Checks} [HC] \cite{devopsBook}, é possível perceber que, apesar de não ser o mais adotado -- como foi no estudo original (ver Figura \ref{tabela_1_artigo_base}), se destaca na nossa amostra, em relação à maioria das prática, presente na segunda colocação. Na amostra, 7 entrevistados adotam pelo menos uma forma rudimentar de verificação e alertas, e 2 entre eles fazem verificações não muito complexas. Um ponto interessante que surgiu foi o fato de P4 achar desnecessário o uso dessa técnica em função do projeto se encontrar, à época da entrevista, em fase de prototipação.
 
-\paragraph{Developer on Call [DOC]}
+\paragraph*{Developer on Call [DOC]}
 
 Na amostra é possível perceber que a técnica de \emph{Developer on Call} [DOC] \cite{devAndDeploymentFB} é mais adotada de forma implícita do que de fato definida -- 3 entrevistados estão em times que funcionam desta forma. Contudo, 5 entrevistados não utilizam esta prática: alguns comentaram que a confiança nos testes automáticos faz com que não utilizem a prática, enquanto outro comentou que a prática é inclusive mal vista pela empresa.
 
-Uma dicotomia interessante foi encontrada entre os resultados da amostra deste trabalho e o do estudo original. Este último comenta que a prática já está sendo largamente aceita nas organizações atualmente, e inclusive um dos entrevistados comenta que essa responsabilidade de ficar até mais tarde para resolver problemas leva os desenvolvedores a escreverem e testarem seus códigos mais veementemente. Tal argumentação tem como base a seguinte citação retirada do artigo e traduzida:
+Uma dicotomia interessante foi encontrada entre os resultados da amostra deste trabalho e o do estudo original. Este último comenta que a prática já está sendo largamente aceita nas organizações atualmente, e inclusive um dos entrevistados comenta que essa responsabilidade de ficar até mais tarde para resolver problemas leva os desenvolvedores a escreverem e testarem seus códigos com maior preocupação com a corretude e qualidade. Tal argumentação tem como base a seguinte citação retirada do artigo e traduzida:
 
 \begin{quote}
     ``Se você não tem testes suficientes e faz deploy de um código ruim isso vai se voltar contra você pois você estará de plantão e terá que dar suporte a isto.'' --- P14 (do estudo original) -- Web -- CORP
@@ -108,7 +108,7 @@ Contudo, com a seguinte citação de P2, é possível perceber que há um sentim
     ``Temos o ciclo de QA, se encontrar alguma coisa a gente vê […] não precisa isso de plantão não.'' --- P2 -- Web -- CORP
 \end{quote}
 
-\paragraph{Pipeline de Implantação [PIP]}
+\paragraph*{Pipeline de Implantação [PIP]}
 
 Em relação à prática de Pipeline de Implantação [PIP] \cite{devopsBook} é possível inferir que ela é amplamente adotada pela amostra, visto que apenas 2 entrevistados obtiveram nota 0 (não utiliza). No estudo original é possível perceber um resultado semelhante a este. Uma grande parte dos entrevistados segue o mesmo padrão para qualquer tamanho da mudança. Outros 2 tinham alguns processos automatizados, mas a \emph{pipeline} era diferente dependendo do tamanho da mudança.
 
@@ -118,7 +118,7 @@ Em relação à prática de Pipeline de Implantação [PIP] \cite{devopsBook} é
 
 Na amostra foi possível perceber que todas as técnicas relacionadas a Entregas Parciais são muito pouco utilizadas: todas estão entre as 4 últimas colocações.
 
-\paragraph{Canary Releases [CAN]}
+\paragraph*{Canary Releases [CAN]}
 
 A técnica de \emph{Canary Releases} [CAN] \cite{continuousDeliveryBook} apareceu nos contextos de jogos e sistemas embarcados. Na equipe do entrevistado P5, que trabalha no domínio de jogos eletrônicos, os principais jogadores -- conhecidos como ``baleias'' -- são escolhidos para participar de um \emph{early access} de novas funcionalidades.  Esses testes levam em torno de 1 semana. 
 
@@ -127,7 +127,7 @@ Já na equipe de P4, que trabalha com sistemas embarcados, a prática é necess�
 Entre os entrevistados que não utilizam a prática de \emph{Canary Releases}, 3 têm um ambiente de homologação para testes e validação de requisitos, mas este utiliza dados diferentes dos de produção. Outros 3 comentam que as features são sempre entregues para todos os usuários ao mesmo tempo.
 
 
-\paragraph{Dark Launches [DAR]}
+\paragraph*{Dark Launches [DAR]}
 
 Do grupo das práticas associadas a Entregas Parciais, \emph{Dark Launches} [DAR] \cite{devAndDeploymentFB} foi a segunda mais utilizada, mas a menos conhecida entre os entrevistados. Isto se confirma com o fato de que 6 entrevistados dizem nunca ter utilizado, e 3 destes afirmam explicitamente que não conhecem a técnica. Importante notar que no estudo original \cite{empiricalStudy2016} esta é a prática menos utilizada.
 
@@ -138,7 +138,7 @@ Do grupo das práticas associadas a Entregas Parciais, \emph{Dark Launches} [DAR
     ``A gente implementa a funcionalidade mas condiciona a não aparecer para o usuário até que a gente queira.'' --- P5 -- Jogos -- Startup
 \end{quote}
 
-\paragraph{Testes A/B [AB]}
+\paragraph*{Testes A/B [AB]}
 
 A utilização da prática de Testes A/B [AB] \cite{testsAB} não foi identificada entre os participantes. Entre as principais causas levantadas para a não utilização, 4 entrevistados dizem que não utilizam pela baixa quantidade de usuários ativos no sistema. Outros 2 consideram que a técnica não se aplica ao contexto da aplicação. É interessante notar que esses dois motivos estão presentes no estudo original \cite{empiricalStudy2016}, contudo, ao contrário deste, ninguém na amostra comentou sobre problemas na arquitetura como causa para não utilização.
 
@@ -153,9 +153,9 @@ Outro motivo importante foi levantado por P8, que comenta que aparentemente não
 
 Esta subseção abordará sobre os dois tópicos marginais que foram identificados durante a análise dos dados obtidos pelas entrevistas: \emph{Code Review} e testes automáticos.
 
-\subsubsection{Code Review}
+\subsubsection*{Code Review}
 
-A prática de \emph{Code Review} \cite{codeReview} é bem vista pela maioria dos entrevistados, considerado uma técnica importante e essencial para o controle de qualidade de código. As razões para o uso são diversas, desde de impor boas práticas -- por P7 -- até o compartilhamento e nivelamento do conhecimento -- por P11.
+A prática de \emph{Code Review} \cite{codeReview} --- definida como uma etapa de revisão de código feita antes da integração de novas funcionalidades e correção de erros, presente geralmente como um passo importante em pipelines de implantação [PIP] --- é bem vista pela maioria dos entrevistados, considerado uma técnica importante e essencial para o controle de qualidade de código. As razões para o uso são diversas, desde de impor boas práticas -- por P7 -- até o compartilhamento e nivelamento do conhecimento -- por P11.
 
 \begin{quote}
     ``... a partir do momento que o sistema vai crescendo, o próprio desenvolvedor não tem a noção de que aquela sua mudança não é a melhor forma de fazer e que pode quebrar outras partes do sistema...'' --- P2 -- WEB -- Corp
@@ -165,12 +165,20 @@ Ainda na amostra, 3 entrevistados acreditam que a prática funciona principalmen
 
 Outro ponto importante foi a distinção entre dois relatos a respeito do engajamento do time com a prática. Enquanto P3 comenta que a equipe dela é bem aberta ao debate e está engajada com o processo, P7 fala que o processo funciona ``mais ou menos'', dependendo do humor dos revisores.
 
-\subsubsection{Testes Automáticos}
+\subsubsection*{Testes Automáticos}
 
-Testes automáticos são, no geral, bem vistos e extremamente recomendados pela maioria dos entrevistados como forma de prevenir erros em tempo de execução. Contudo, o participante P2 comenta que é contrário ao fato da garantia de qualidade depender exclusivamente desses testes.
+Testes automáticos ---  usado principalmente em ambientes que utilizam TBD, pode ser definida como a prática de garantia de qualidade através de programas que validam se o software está de acordo com os requisitos definidos --- são, no geral, bem vistos e extremamente recomendados pela maioria dos entrevistados como forma de prevenir erros em tempo de execução. Contudo, o participante P2 comenta que é contrário ao fato da garantia de qualidade depender exclusivamente desses testes.
 
 \begin{quote}
     ``... automação [de testes] não resolve todos os problemas [relacionados a garantia de qualidade], ele vai identificar muita coisa, mas tem várias outras que precisamos do olhar de um testador…'' --- P2 -- WEB -- Corp
 \end{quote}
 
 Na amostra, 5 entrevistados acreditam que o aumento da cobertura de testes automáticos pode diminuir a quantidade de bugs em produção. Dentro desse grupo, o participante P9 comenta que isto poderia, no entanto, diminuir a velocidade de entregas do time. P5 adicionou ainda que sente que a \emph{sprint} é muito curta e não consegue tempo dentro destas para adicionar testes automáticos.
+
+\subsection{Ameaças a validade}
+
+Como em qualquer estudo, este também apresenta algumas limitações. Uma delas diz respeito ao número de desenvolvedores que concordaram participar do estudo. Para diminuir os efeitos disso, foi escolhido uma amostra mais diversa em relação a tamanho da corporação que trabalha.
+
+É importante salientar também que os códigos gerados durante o processo de codificação das entrevistas são passíveis de enviesamento visto que este trabalho replica parte de um estudo anterior. O viés ocorre porque os autores já tinham em mente que assuntos estavam sendo procurados na fala durante o levantamento de códigos. 
+
+Outra ameaça que deve ser levada em conta é o processo de \emph{coding} realizado. Ele foi feito baseando-se no áudio das entrevistas, e não nos textos transcritos, como geralmente é feito \cite{groundedTheory}. Isso pode tornar os códigos enviesados ou até mesmo significar a falta de códigos importantes que poderiam ter sido levantados através da análise de transcrições. É válido citar que há algumas vertentes que defendem a codificação através do áudio \cite{listenCode}. Entre os benefícios de realizar o processo de codificação por essa técnica estão a preservação da entonação e intenção do usuário, que são aspectos difíceis de capturar por meio de transcrições. Contudo ainda devem ser feitos trabalhos quantitativos na área para validação e melhor definição do processo 
